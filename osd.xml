@@ -681,7 +681,7 @@
     </window>
 
     <window name="osd_status">
-        <area>838,736,1029,312</area>
+        <area>1238,892,629,156</area>
 
         <fontdef name="basenormal" face="CartoGothic Std">
             <color>#FFFFFF</color>
@@ -689,44 +689,44 @@
         </fontdef>
 
         <imagetype name="entry_bg">
-            <area>0,0,1029,312</area>
+            <area>0,0,629,156</area>
             <filename>images/osd_bg.png</filename>
         </imagetype>
 
         <textarea name="title">
-            <area>61,80,900,50</area>
+            <area>61,100,250,50</area>
             <font>basenormal</font>
             <align>allcenter</align>
             <multiline>false</multiline>
         </textarea>
 
         <progressbar name="position">
-            <area>61,166,900,33</area>
+            <area>41,50,540,33</area>
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
-                <area>0,0,900,33</area>
+                <area>0,0,540,33</area>
                 <filename>images/progressbar/progressbar_large_background.png</filename>
             </imagetype>
             <imagetype name="progressimage">
-                <area>0,0,900,33</area>
+                <area>0,0,540,33</area>
                 <filename>images/progressbar/progressbar_large_fill.png</filename>
             </imagetype>
         </progressbar>
 
         <textarea name="description">
-            <area>61,200,900,50</area>
+            <area>300,100,300,50</area>
             <font>basenormal</font>
             <align>allcenter</align>
             <multiline>false</multiline>
             <template>%DESCRIPTION% %VALUE%%UNITS%</template>
         </textarea>
-
+<!--
         <imagetype name="entry_overlay">
-            <area>28,18,975,149</area>
+            <area>28,18,575,149</area>
             <filename>images/osd_overlay.png</filename>
         </imagetype>
-
+-->
     </window>
 
     <window name="ChannelEditor">
