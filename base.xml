@@ -501,7 +501,7 @@
                         </imagetype>
                     </state>
                 </statetype>
-                <textarea name="00x00">
+                <textarea name="filesize_str">
                     <area>937,56,187,30</area>
                     <align>right,vcenter</align>
                     <font>basesmall</font>
@@ -606,7 +606,7 @@
                         </imagetype>
                     </state>
                 </statetype>
-                <textarea name="00x00">
+                <textarea name="filesize_str">
                     <area>937,166,187,30</area>
                     <alpha>200</alpha>
                 </textarea>
@@ -689,7 +689,7 @@
                         </imagetype>
                     </state>
                 </statetype>
-                <textarea name="00x00">
+                <textarea name="filesize_str">
                     <area>937,166,187,30</area>
                     <alpha>200</alpha>
                     <font>basesmall</font>
