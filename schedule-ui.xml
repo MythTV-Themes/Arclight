@@ -180,7 +180,7 @@
                         <area>0,2,180,88</area>
                         <align>allcenter</align>
                         <font>basesmall</font>
-                        <template>%CHANNELNUMBER%\n%CALLSIGN%</template>
+                        <template>%CHANNELNUMBER% %CALLSIGN%</template>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active"/>
