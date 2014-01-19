@@ -385,7 +385,7 @@
             <area>45,30,600,50</area>
             <font>basegothicmedium</font>
             <align>center,vcenter</align>
-            <value>Ustawienia Ripera</value>
+            <value>Ripper Settings</value>
         </textarea>
 
         <shape name="settings_bg">
@@ -523,7 +523,7 @@
             <area>45,30,600,50</area>
             <font>basegothicmedium</font>
             <align>center,vcenter</align>
-            <value>Ustawienia Nagrywania CD</value>
+            <value>Burning Settings</value>
         </textarea>
 
         <shape name="settings_bg">
@@ -644,7 +644,7 @@
             <area>45,30,600,50</area>
             <font>basegothicmedium</font>
             <align>center,vcenter</align>
-            <value>Ustawienia Wizualizacji</value>
+            <value>Visualization Settings</value>
         </textarea>
 
         <shape name="settings_bg">
