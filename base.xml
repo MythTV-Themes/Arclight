@@ -8,9 +8,13 @@
 
     <!-- Used for Edit Metadata, description text, etc. -->
     <!-- http://www.fontsite.com/download-free-fonts/cartogothic-std/ -->
-    <fontdef name="basesmall" face="CartoGothic Std">
-        <pixelsize>25</pixelsize>
+    <fontdef name="base" face="CartoGothic Std">
+        <pixelsize>30</pixelsize>
         <color>#FFFFFF</color>
+    </fontdef>
+
+    <fontdef name="basesmall" from="base">>
+        <pixelsize>25</pixelsize>
     </fontdef>
 
     <!-- http://www.theleagueofmoveabletype.com/fonts/7-league-gothic -->
@@ -48,6 +52,10 @@
     </fontdef>
 
     <fontdef name="basesmalllightblue" from="basesmall">
+        <color>#0767AB</color>
+    </fontdef>
+
+    <fontdef name="baseextrasmalllightblue" from="baseextrasmall">
         <color>#0767AB</color>
     </fontdef>
 
@@ -2468,7 +2476,10 @@
 
     </window>
 
+<!-- #10761
     <window name="videowindow" from="windowslideup">
+-->
+    <window name="videowindow">
         <area>-1,-1,706,298</area>
 
         <imagetype name="entry_bg">

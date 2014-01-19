@@ -69,6 +69,11 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <imagetype name="copyrightlogo">
+            <area>0,680,240,60</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
     </window>
 
     <window name="Current Conditions">
@@ -188,6 +193,11 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <imagetype name="copyrightlogo">
+            <area>0,680,240,60</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
     </window>
 
     <window name="Three Day Forecast">
@@ -200,23 +210,50 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <shape name="boxshape0">
+        <shape name="item1">
             <area>786,174,1136,300</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="item1div">
+            <area>786,474,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="item1divider">
+            <area>786,474,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
-        <shape name="boxshape1">
-            <area>786,476,1136,300</area>
+        <shape name="item2">
+            <area>786,475,1136,300</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="item2div">
+            <area>786,775,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="item2divider">
+            <area>786,775,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
-        <shape name="boxshape2">
-            <area>786,779,1136,300</area>
+        <shape name="item3">
+            <area>786,776,1136,300</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="item3div">
+            <area>786,1076,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="item3divider">
+            <area>786,1076,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <imagetype name="icon-0">
             <area>806,194,260,260</area>
@@ -287,6 +324,11 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <imagetype name="copyrightlogo">
+            <area>0,680,240,60</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
     </window>
 
     <window name="Six Day Forecast">
@@ -304,36 +346,90 @@
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape0div">
+            <area>786,324,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape0divider">
+            <area>786,324,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape1">
             <area>786,325,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape1div">
+            <area>786,475,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape1divider">
+            <area>786,475,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape2">
             <area>786,476,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape2div">
+            <area>786,626,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape2divider">
+            <area>786,626,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape3">
-            <area>786,628,1136,150</area>
+            <area>786,627,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape3div">
+            <area>786,777,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape3divider">
+            <area>786,777,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape4">
-            <area>786,779,1136,150</area>
+            <area>786,778,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape4div">
+            <area>786,928,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape4divider">
+            <area>786,928,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape5">
-            <area>786,930,1136,150</area>
+            <area>786,929,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape5div">
+            <area>786,1079,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape5divider">
+            <area>786,1079,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <textarea name="date-0" from="basetextarea">
             <area>946,184,700,50</area>
@@ -453,6 +549,11 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <imagetype name="copyrightlogo">
+            <area>0,680,240,60</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
     </window>
 
     <window name="Static Map">
@@ -503,6 +604,11 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <imagetype name="copyrightlogo">
+            <area>0,680,240,60</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
     </window>
 
     <window name="Severe Weather Alerts">
@@ -531,6 +637,11 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <imagetype name="copyrightlogo">
+            <area>0,680,240,60</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
     </window>
 
     <window name="18 Hour Forecast">
@@ -548,36 +659,90 @@
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape0div">
+            <area>786,324,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape0divider">
+            <area>786,324,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape1">
             <area>786,325,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape1div">
+            <area>786,475,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape1divider">
+            <area>786,475,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape2">
             <area>786,476,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape2div">
+            <area>786,626,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape2divider">
+            <area>786,626,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape3">
-            <area>786,628,1136,150</area>
+            <area>786,627,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape3div">
+            <area>786,777,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape3divider">
+            <area>786,777,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape4">
-            <area>786,779,1136,150</area>
+            <area>786,778,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape4div">
+            <area>786,928,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape4divider">
+            <area>786,928,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <shape name="boxshape5">
-            <area>786,930,1136,150</area>
+            <area>786,929,1136,150</area>
             <fill color="#000000" alpha="180" />
             <cornerradius>15</cornerradius>
         </shape>
+        <shape name="boxshape5div">
+            <area>786,1079,100%,1</area>
+            <fill color="#333333" alpha="180" />
+        </shape>
+        <imagetype name="boxshape5divider">
+            <area>786,1079,100%,1</area>
+            <filename>images/arclight_wide_divider.png</filename>
+            <alpha>160</alpha>
+        </imagetype>
 
         <textarea name="time-0" from="basetextarea">
             <area>946,184,700,50</area>
@@ -696,6 +861,11 @@
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
+
+        <imagetype name="copyrightlogo">
+            <area>0,680,240,60</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
     </window>
 

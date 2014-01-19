@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<mythuitheme>
+
+    <window name="generalsettings">
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+       <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <shape name="title_bg">
+            <area>35,20,700,70</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>50,30,600,50</area>
+            <font>basegothicmedium</font>
+            <align>center,vcenter</align>
+            <value>General Settings</value>
+        </textarea>
+
+        <shape name="settings_bg">
+            <area>35,120,700,770</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="musiclocation_label" from="basetextarea">
+            <area>50,120,500,30</area>
+            <align>left,vcenter</align>
+            <value>Directory to hold music:</value>
+        </textarea>
+        <textedit name="musiclocation" from="basetextedit">
+            <area>100,150,500,50</area>
+        </textedit>
+
+        <textarea name="nonid3filenameformat_label" from="basetextarea">
+            <area>50,230,500,30</area>
+            <align>left,vcenter</align>
+            <value>Filename Format:</value>
+        </textarea>
+        <textedit name="nonid3filenameformat" from="basetextedit">
+            <area>100,260,500,50</area>
+        </textedit>
+
+        <textarea name="musiccddevice_label" from="basetextarea">
+            <area>50,340,500,30</area>
+            <align>left,vcenter</align>
+            <value>CD device:</value>
+        </textarea>
+        <textedit name="musiccddevice" from="basetextedit">
+            <area>100,370,500,50</area>
+        </textedit>
+
+        <textarea name="musicaudiodevice_label" from="basetextarea">
+            <area>50,450,500,30</area>
+            <align>left,vcenter</align>
+            <value>Audio device:</value>
+        </textarea>
+        <textedit name="musicaudiodevice" from="basetextedit">
+            <area>100,480,500,50</area>
+        </textedit>
+
+        <textarea name="musicdefaultupmix_label" from="basetextarea">
+            <area>50,560,500,30</area>
+            <align>right,vcenter</align>
+            <value>Convert stereo to 5.1 sound:</value>
+        </textarea>
+        <checkbox name="musicdefaultupmix" from="basecheckbox">
+            <position>570,560</position>
+        </checkbox>
+
+        <textarea name="ignoreid3tags_label" from="basetextarea">
+            <area>50,590,500,30</area>
+            <align>right,vcenter</align>
+            <value>Ignore ID3 Tags:</value>
+        </textarea>
+        <checkbox name="ignoreid3tags" from="basecheckbox">
+            <position>570,590</position>
+        </checkbox>
+
+        <textarea name="allowtagwriting_label" from="basetextarea">
+            <area>50,620,500,30</area>
+            <align>right,vcenter</align>
+            <value>Allow metadata to be written to tags:</value>
+        </textarea>
+        <checkbox name="allowtagwriting" from="basecheckbox">
+            <position>570,620</position>
+        </checkbox>
+
+        <textarea name="tagencoding_label" from="basetextarea">
+            <area>50,700,300,30</area>
+            <align>right,vcenter</align>
+            <value>Tag Encoding:</value>
+        </textarea>
+        <buttonlist name="tagencoding" from="baseselector">
+            <position>370,700</position>
+        </buttonlist>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>50,800,700,150</area>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="basebutton">
+            <position>150,1000</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <position>450,1000</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <window name="playersettings">
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+       <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <shape name="title_bg">
+            <area>35,20,700,70</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,30,600,50</area>
+            <font>basegothicmedium</font>
+            <align>center,vcenter</align>
+            <value>Player Settings</value>
+        </textarea>
+
+        <shape name="settings_bg">
+            <area>35,120,700,770</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="resumemode_label" from="basetextarea">
+            <area>50,300,300,30</area>
+            <align>right,vcenter</align>
+            <value>Resume mode:</value>
+        </textarea>
+        <buttonlist name="resumemode" from="baseselector">
+            <position>370,300</position>
+        </buttonlist>
+
+        <textarea name="exitaction_label" from="basetextarea">
+            <area>50,400,300,30</area>
+            <align>right,vcenter</align>
+            <value>Action on exit:</value>
+        </textarea>
+        <buttonlist name="exitaction" from="baseselector">
+            <position>370,400</position>
+        </buttonlist>
+
+        <textarea name="autolookupcd_label" from="basetextarea">
+            <area>50,500,510,30</area>
+            <align>right,vcenter</align>
+            <value>Automatically lookup CDs:</value>
+        </textarea>
+        <checkbox name="autolookupcd" from="basecheckbox">
+            <position>570,500</position>
+        </checkbox>
+
+        <textarea name="autoplaycd_label" from="basetextarea">
+            <area>50,600,510,30</area>
+            <align>right,vcenter</align>
+            <value>Automatically Play CDs:</value>
+        </textarea>
+        <checkbox name="autoplaycd" from="basecheckbox">
+            <position>570,600</position>
+        </checkbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>50,650,600,300</area>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="basebutton">
+            <position>150,1000</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <position>450,1000</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <window name="ratingsettings">
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+       <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <shape name="title_bg">
+            <area>35,20,700,70</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,30,600,50</area>
+            <font>basegothicmedium</font>
+            <align>center,vcenter</align>
+            <value>Wagi dla PlayList</value>
+        </textarea>
+
+        <shape name="settings_bg">
+            <area>35,120,700,770</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="ratingweight_label" from="basetextarea">
+            <area>50,300,400,30</area>
+            <align>right,vcenter</align>
+            <value>Rating Weight:</value>
+        </textarea>
+        <spinbox name="ratingweight" from="basespinbox">
+            <position>470,300</position>
+        </spinbox>
+
+        <textarea name="playcountweight_label" from="basetextarea">
+            <area>50,350,400,30</area>
+            <align>right,vcenter</align>
+            <value>Play Count Weight:</value>
+        </textarea>
+        <spinbox name="playcountweight" from="basespinbox">
+            <position>470,350</position>
+        </spinbox>
+
+        <textarea name="lastplayweight_label" from="basetextarea">
+            <area>50,400,400,30</area>
+            <align>right,vcenter</align>
+            <value>Last Play Weight:</value>
+        </textarea>
+        <spinbox name="lastplayweight" from="basespinbox">
+            <position>470,400</position>
+        </spinbox>
+
+        <textarea name="randomweight_label" from="basetextarea">
+            <area>50,450,400,30</area>
+            <align>right,vcenter</align>
+            <value>Random Weight:</value>
+        </textarea>
+        <spinbox name="randomweight" from="basespinbox">
+            <position>470,450</position>
+        </spinbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>50,600,600,300</area>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="basebutton">
+            <position>150,950</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <position>450,950</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <window name="importsettings">
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+       <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <shape name="title_bg">
+            <area>35,20,700,70</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,30,600,50</area>
+            <font>basegothicmedium</font>
+            <align>center,vcenter</align>
+            <value>Ustawienia Ripera</value>
+        </textarea>
+
+        <shape name="settings_bg">
+            <area>35,120,700,770</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="paranoialevel_label" from="basetextarea">
+            <area>50,200,400,30</area>
+            <align>right,vcenter</align>
+            <value>Paranoia Level:</value>
+        </textarea>
+        <buttonlist name="paranoialevel" from="baseselector">
+            <position>470,200</position>
+        </buttonlist>
+
+        <textarea name="filenametemplate_label" from="basetextarea">
+            <area>50,250,500,30</area>
+            <align>left,vcenter</align>
+            <value>File storage location:</value>
+        </textarea>
+        <textedit name="filenametemplate" from="basetextedit">
+            <area>130,280,600,50</area>
+        </textedit>
+
+        <textarea name="nowhitespace_label" from="basetextarea">
+            <area>50,380,500,30</area>
+            <align>right,vcenter</align>
+            <value>Replace space with underscore:</value>
+        </textarea>
+        <checkbox name="nowhitespace" from="basecheckbox">
+            <position>570,380</position>
+        </checkbox>
+
+        <textarea name="encoding_label" from="basetextarea">
+            <area>50,430,400,30</area>
+            <align>right,vcenter</align>
+            <value>Encoding Type:</value>
+        </textarea>
+        <buttonlist name="encodertype" from="baseselector">
+            <position>470,430</position>
+        </buttonlist>
+
+        <textarea name="defaultripquality_label" from="basetextarea">
+            <area>50,480,400,30</area>
+            <align>right,vcenter</align>
+            <value>Default Rip Quality:</value>
+        </textarea>
+        <buttonlist name="defaultripquality" from="baseselector">
+            <position>470,480</position>
+        </buttonlist>
+
+        <textarea name="mp3usevbr_label" from="basetextarea">
+            <area>50,530,500,30</area>
+            <align>right,vcenter</align>
+            <value>Use variable bitrates:</value>
+        </textarea>
+        <checkbox name="mp3usevbr" from="basecheckbox">
+            <position>570,530</position>
+        </checkbox>
+
+        <textarea name="ejectcd_label" from="basetextarea">
+            <area>50,580,500,30</area>
+            <align>right,vcenter</align>
+            <value>Automatically eject CDs after ripping:</value>
+        </textarea>
+        <checkbox name="ejectcd" from="basecheckbox">
+            <position>570,580</position>
+        </checkbox>
+
+        <textarea name="postcdripscript_label" from="basetextarea">
+            <area>50,680,500,30</area>
+            <align>left,vcenter</align>
+            <value>Script Path:</value>
+        </textarea>
+        <textedit name="postcdripscript" from="basetextedit">
+            <area>130,710,600,50</area>
+        </textedit>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>50,750,600,200</area>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="basebutton">
+            <position>150,1000</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <position>450,1000</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <window name="burningsettings">
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+       <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <shape name="title_bg">
+            <area>35,20,700,70</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,30,600,50</area>
+            <font>basegothicmedium</font>
+            <align>center,vcenter</align>
+            <value>Ustawienia Nagrywania CD</value>
+        </textarea>
+
+        <shape name="settings_bg">
+            <area>35,120,700,770</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="cdwriterenabled_label" from="basetextarea">
+            <area>50,160,500,30</area>
+            <align>right,vcenter</align>
+            <value>Enable CD Writing:</value>
+        </textarea>
+        <checkbox name="cdwriterenabled" from="basecheckbox">
+            <position>570,165</position>
+        </checkbox>
+
+        <textarea name="cdwriterdevice_label" from="basetextarea">
+            <area>50,210,400,30</area>
+            <align>left,vcenter</align>
+            <value>CD-Writer Device:</value>
+        </textarea>
+        <textedit name="cdwriterdevice" from="basetextedit">
+            <position>130,210</position>
+        </textedit>
+
+        <textarea name="cddisksize_label" from="basetextarea">
+            <area>50,260,400,30</area>
+            <align>right,vcenter</align>
+            <value>Disk Size:</value>
+        </textarea>
+        <buttonlist name="cddisksize" from="baseselector">
+            <position>470,260</position>
+        </buttonlist>
+
+        <textarea name="cdwritespeed_label" from="basetextarea">
+            <area>50,310,400,30</area>
+            <align>right,vcenter</align>
+            <value>CD Write Speed:</value>
+        </textarea>
+        <buttonlist name="cdwritespeed" from="baseselector">
+            <position>470,310</position>
+        </buttonlist>
+
+        <textarea name="cdblanktype_label" from="basetextarea">
+            <area>50,360,400,30</area>
+            <align>right,vcenter</align>
+            <value>CD Blanking Type:</value>
+        </textarea>
+        <buttonlist name="cdblanktype" from="baseselector">
+            <position>470,360</position>
+        </buttonlist>
+
+        <textarea name="cdcreatedir_label" from="basetextarea">
+            <area>50,410,500,50</area>
+            <align>right,vcenter</align>
+            <value>Enable directories on MP3 Creation:</value>
+        </textarea>
+        <checkbox name="cdcreatedir" from="basecheckbox">
+            <position>570,415</position>
+        </checkbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>50,600,600,300</area>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="basebutton">
+            <position>150,950</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <position>450,950</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="visualizationsettings">
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+       <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <shape name="title_bg">
+            <area>35,20,700,70</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,30,600,50</area>
+            <font>basegothicmedium</font>
+            <align>center,vcenter</align>
+            <value>Ustawienia Wizualizacji</value>
+        </textarea>
+
+        <shape name="settings_bg">
+            <area>35,120,700,770</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="cycleonsongchange_label" from="basetextarea">
+            <area>50,300,500,30</area>
+            <align>right,vcenter</align>
+            <value>Change Visualizer on each song:</value>
+        </textarea>
+        <checkbox name="cycleonsongchange" from="basecheckbox">
+            <position>570,300</position>
+        </checkbox>
+
+        <textarea name="randomizeorder_label" from="basetextarea">
+            <area>50,350,500,30</area>
+            <align>right,vcenter</align>
+            <value>Randomize Visualizer order:</value>
+        </textarea>
+        <checkbox name="randomizeorder" from="basecheckbox">
+            <position>570,350</position>
+        </checkbox>
+
+        <textarea name="scalewidth_label" from="basetextarea">
+            <area>50,400,400,30</area>
+            <align>right,vcenter</align>
+            <value>Width for Visual Scaling:</value>
+        </textarea>
+        <spinbox name="scalewidth" from="basespinbox">
+            <position>470,400</position>
+        </spinbox>
+
+        <textarea name="scaleheight_label" from="basetextarea">
+            <area>50,450,400,30</area>
+            <align>right,vcenter</align>
+            <value>Height for Visual Scaling:</value>
+        </textarea>
+        <spinbox name="scaleheight" from="basespinbox">
+            <position>470,450</position>
+        </spinbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>50,550,600,300</area>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="basebutton">
+            <position>150,950</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <position>450,950</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>

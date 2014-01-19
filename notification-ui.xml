@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <window name="notification">
+        <area>1050,70,800,190</area>
+
+        <shape name="background" from="basebackground">
+            <area>0,0,800,190</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="50" width="2" />
+            <cornerradius>3</cornerradius>
+        </shape>
+
+        <textarea name="title">
+            <area>50,15,600,35</area>
+            <font>basenormal</font>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="origin">
+            <area>50,50,600,20</area>
+            <font>baseverymall</font>
+            <case>normal</case>
+            <alpha>160</alpha>
+        </textarea>
+
+        <textarea name="description">
+            <area>50,72,600,20</area>
+            <font>basesmall</font>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="extra">
+            <area>50,100,600,60</area>
+            <font>verysmall</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="progress_text">
+            <area>50,125,600,20</area>
+            <font>verysmall</font>
+            <case>normal</case>
+            <alpha>160</alpha>
+        </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <area>50,150,345,5</area>
+        </progressbar>
+    </window>
+
+    <window name="notification-image">
+        <area>1050,70,800,190</area>
+
+        <shape name="background" from="basebackground">
+            <area>0,0,800,190</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="50" width="2" />
+            <cornerradius>3</cornerradius>
+        </shape>
+
+        <statetype name="mediastate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="noartwork">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageartwork">
+                    <!-- Artist: Vargas21 http://www.iconarchive.com/show/aquave-metal-icons-by-vargas21/Music-icon.html -->
+                    <filename>images/mythnotify/noartwork.png</filename>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="errorstate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="error">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Error-icon.html -->
+                    <filename>images/mythnotify/error.png</filename>
+                    <area>18,18,115,115</area>
+                </imagetype>
+            </state>
+            <state name="check">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageok">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Select-icon.html -->
+                    <filename>images/mythnotify/check.png</filename>
+                    <area>18,18,115,115</area>
+                </imagetype>
+            </state>
+            <state name="warning">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imagewarning">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Alert-icon.html -->
+                    <filename>images/mythnotify/warning.png</filename>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
+            <state name="busy">
+                <area>0,0,100%,100%</area>
+                <imagetype name="animationbusy">
+                    <area>35,35,80,80</area>
+                    <!--<filepattern low="1" high="29">images/shared/busy/busy-%1.png</filepattern>-->
+                    <filepattern low="1" high="8">mb_loading_%1.png</filepattern>
+                    <delay>100</delay>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <imagetype name="image" depends="!mediastate&amp;!errorstate">
+            <filename>images/mythnotify/damaged.png</filename>
+            <area>20,20,150,150</area>
+        </imagetype>
+
+        <textarea name="title">
+            <area>185,15,600,35</area>
+            <font>basenormal</font>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="origin">
+            <area>185,50,600,20</area>
+            <font>baseverymall</font>
+            <case>normal</case>
+            <alpha>160</alpha>
+        </textarea>
+
+        <textarea name="description">
+            <area>185,72,600,20</area>
+            <font>basesmall</font>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="extra">
+            <area>185,100,600,60</area>
+            <font>verysmall</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="progress_text">
+            <area>185,125,600,20</area>
+            <font>verysmall</font>
+            <case>normal</case>
+            <alpha>160</alpha>
+        </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <area>185,150,345,5</area>
+        </progressbar>
+    </window>
+
+    <window name="notification-full">
+        <area>0,0,100%,100%</area>
+
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <fill color="#000000"/>
+        </shape>
+
+        <statetype name="mediastate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="noartwork">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageartwork">
+                    <!-- Artist: Vargas21 http://www.iconarchive.com/show/aquave-metal-icons-by-vargas21/Music-icon.html -->
+                    <filename>images/mythnotify/noartwork512.png</filename>
+                    <area>0,0,100%,100%</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="errorstate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="error">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Error-icon.html -->
+                    <filename>images/mythnotify/error.png</filename>
+                    <area>0,0,100%,100%</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="check">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageok">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Select-icon.html -->
+                    <filename>images/mythnotify/check.png</filename>
+                    <area>704,189,512,512</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="warning">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imagewarning">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Alert-icon.html -->
+                    <filename>images/mythnotify/warning.png</filename>
+                    <area>704,189,512,512</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="busy">
+                <area>0,0,100%,100%</area>
+                <imagetype name="animationbusy">
+                    <area>704,189,512,512</area>
+                    <!--<filepattern low="1" high="29">images/shared/busy/busy-%1.png</filepattern>-->
+                    <filepattern low="1" high="8">mb_loading_%1.png</filepattern>
+                    <delay>100</delay>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <imagetype name="image" depends="!mediastate&amp;!errorstate">
+            <filename>images/mythnotify/damaged.png</filename>
+            <area>-1,-1,100%,100%</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>170,10,-10,35</area>
+            <font>mysmall</font>
+        </textarea>
+
+        <textarea name="origin" from="basetextarea">
+            <area>170,45,-10,30</area>
+            <font>myverysmall</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea" depends="progress">
+            <area>170,75,-10,30</area>
+            <font>myverysmall</font>
+        </textarea>
+
+        <textarea name="extra" from="basetextarea" depends="progress">
+            <area>170,105,300,30</area>
+            <font>myverysmall</font>
+        </textarea>
+
+        <textarea name="progress_text" from="basetextarea">
+            <area>370,105,-10,30</area>
+            <font>myverysmall</font>
+            <align>right</align>
+        </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <area>170,100%-100,10,10</area>
+        </progressbar>
+
+        <textarea name="description_noprogress" from="basetextarea" depends="!progress">
+            <area>170,100%-165,-10,115</area>
+            <font>basemedium</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <template>%DESCRIPTION%</template>
+        </textarea>
+    </window>
+
+    <window name="notification-image-nextrec-small">
+        <area>1050,70,800,100</area>
+
+        <shape name="background" from="basebackground">
+            <area>0,0,800,100</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="50" width="2" />
+            <cornerradius>3</cornerradius>
+        </shape>
+
+        <statetype name="mediastate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="noartwork">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageartwork">
+                    <!-- Artist: Vargas21 http://www.iconarchive.com/show/aquave-metal-icons-by-vargas21/Music-icon.html -->
+                    <filename>images/mythnotify/noartwork.png</filename>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="errorstate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="error">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Error-icon.html -->
+                    <filename>images/mythnotify/error.png</filename>
+                    <area>18,18,115,115</area>
+                </imagetype>
+            </state>
+            <state name="check">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageok">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Select-icon.html -->
+                    <filename>images/mythnotify/check.png</filename>
+                    <area>18,18,115,115</area>
+                </imagetype>
+            </state>
+            <state name="warning">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imagewarning">
+                    <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Alert-icon.html -->
+                    <filename>images/mythnotify/warning.png</filename>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
+            <state name="busy">
+                <area>0,0,100%,100%</area>
+                <imagetype name="animationbusy">
+                    <area>35,35,80,80</area>
+                    <!--<filepattern low="1" high="29">images/shared/busy/busy-%1.png</filepattern>-->
+                    <filepattern low="1" high="8">mb_loading_%1.png</filepattern>
+                    <delay>100</delay>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <imagetype name="image" depends="!mediastate&amp;!errorstate">
+            <filename>images/mythnotify/damaged.png</filename>
+            <area>15,5,90,90</area>
+        </imagetype>
+
+        <textarea name="title">
+            <area>130,5,600,35</area>
+            <font>basenormal</font>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="origin">
+            <area>130,40,600,20</area>
+            <font>baseverymall</font>
+            <case>normal</case>
+            <alpha>160</alpha>
+        </textarea>
+
+        <textarea name="description">
+            <area>130,62,600,20</area>
+            <font>basesmall</font>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="extra">
+            <area>130,100,600,60</area>
+            <font>verysmall</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <case>normal</case>
+        </textarea>
+
+        <textarea name="progress_text">
+            <area>130,125,600,20</area>
+            <font>verysmall</font>
+            <case>normal</case>
+            <alpha>160</alpha>
+        </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <area>130,150,345,5</area>
+        </progressbar>
+    </window>
+
+</mythuitheme>

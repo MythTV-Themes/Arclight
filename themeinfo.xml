@@ -3,8 +3,8 @@
     <name>Arclight</name>
     <aspect>16:9</aspect>
     <author>
-        <name>Robert McNamara</name>
-        <email>robert.mcnamara@gmail.com</email>
+        <name>Various authours</name>
+        <email>mythtv-theming@mythtv.org</email>
     </author>
 
     <types>
@@ -16,7 +16,7 @@
 
     <version>
         <major>27</major>
-        <minor>1</minor>
+        <minor>01</minor>
     </version>
 
     <detail>
