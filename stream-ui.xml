@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<mythuitheme>
+
+    <window name="streamview"  include="music-base.xml">
+
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <shape name="visualizer_tracks_bg">
+            <area>20,350,728,270</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <shape name="played_tracks_bg">
+            <area>20,15,728,320</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <shape name="track_info_bg">
+            <area>20,670,728,330</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="nostreams" from="basetextarea">
+            <area>660,400,600,380</area>
+            <shape name="outer_frame">
+                <area>0,0,620,400</area>
+                <fill color="#000000" alpha="0" />
+                <line color="#CCCCCC" alpha="255" />
+            </shape>
+            <shape name="outer_tree_bg">
+                <area>0,0,620,400</area>
+                <fill color="#666666" alpha="120" />
+            </shape>
+            <shape name="warning_bg">
+                <area>10,10,600,380</area>
+                <fill color="#000000" alpha="255" />
+            </shape>
+            <textarea name="warning_txt" from="basetextarea">
+                <area>0,140,600,100</area>
+                <multiline>yes</multiline>
+                <font>basenormal</font>
+                <align>allcenter</align>
+                <cutdown>yes</cutdown>
+                <value>ress MENU to add some radio streams to play.</value>
+            </textarea>
+        </textarea>
+
+        <buttonlist name="streamlist">
+            <area>786,478,1136,600</area>
+            <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>1</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>2,0,1136,600</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,50</area>
+                    <shape name="item">
+                        <area>0,0,100%,49</area>
+                        <fill color="#000000" alpha="180" />
+                    </shape>
+                    <shape name="itemdiv">
+                        <area>0,49,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,49,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>35,5,40,40</area>
+                        <filename>mm_icecast.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <!--<statetype name="playstate">
+                        <state name="playing">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="playing">
+                                <area>400,15,100,35</area>
+                                <align>left,vcenter</align>
+                                <font>basesmalllightblue</font>
+                                <alpha>255</alpha>
+                                <value>Playing...</value>
+                            </textarea>
+                        </state>
+                    </statetype>-->
+                    <textarea name="station" from="buttontext">
+                        <area>110,7,500,35</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="genre" from="buttontext">
+                        <area>600,7,500,35</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1136,100</area>
+                    <shape name="item">
+                        <area>0,0,100%,99</area>
+                        <fill color="#0767AB" alpha="240" />
+                    </shape>
+                    <shape name="itemdiv">
+                        <area>0,99,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,99,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>10,10,90,80</area>
+                        <filename>mm_nothumb.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="station" from="buttontext">
+                        <area>110,30,500,35</area>
+                        <font>base</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="genre" from="buttontext">
+                        <area>600,5,500,35</area>
+                        <align>left,vcenter</align>
+                        <font>base</font>
+                    </textarea>
+                    <textarea name="filename" from="buttontext">
+                        <area>600,65,500,35</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1075,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1057,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="playedtrackslist" from="basebuttonlist2">
+            <area>25,350,760,250</area>
+            <spacing>0</spacing>
+            <layout>vertical</layout>
+            <arrange>stack</arrange>
+            <showarrow>no</showarrow>
+            <buttonarea>0,0,760,250</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,46</area>
+
+                    <imagetype name="buttonimage">
+                        <area>5,5,36,36</area>
+                        <filename>mm_icecast.png</filename>
+                    </imagetype>
+
+                    <textarea name="tracknum">
+                        <area>50,0,50,46</area>
+                        <align>right,vcenter</align>
+                        <template>%1 -</template>
+                    </textarea>
+
+                    <textarea name="title">
+                        <area>110,0,350,46</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+
+                    <textarea name="artist">
+                        <area>460,0,160,46</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+
+                    <textarea name="length">
+                        <area>620,0,80,46</area>
+                        <align>right,vcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="buttonimage">
+                        <area>5,5,36,36</area>
+                        <filename>mm_icecast.png</filename>
+                    </imagetype>
+                    <shape name="selectbar">
+                        <area>0,0,100%,46</area>
+                    </shape>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <shape name="selectbar">
+                        <area>0,0,100%,46</area>
+                    </shape>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>665,235</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>695,235</position>
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="mm_blackhole_border">
+            <filename>mm_blackhole_border.png</filename>
+            <area>32,689,162,162</area>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>230,680,500,60</area>
+            <font>basemedium</font>
+        </textarea>
+
+        <textarea name="artist" from="basetextarea">
+            <area>230,725,500,34</area>
+            <font>basemedium</font>
+        </textarea>
+
+        <textarea name="channel" from="basetextarea">
+            <area>230,790,500,34</area>
+            <font>basesmall</font>
+            <template>%STATION% - %CHANNEL%</template>
+        </textarea>
+
+        <textarea name="filename" from="basetextarea">
+            <font>baseextrasmall</font>
+            <area>230,825,500,35</area>
+        </textarea>
+
+        <progressbar name="bufferprogress">
+            <position>230,880</position>
+            <layout>horizontal</layout>
+           <style>reveal</style>
+        <imagetype name="background">
+            <area>0,0,380,20</area>
+            <filename>images/progressbar/progressbar_large_background.png</filename>
+        </imagetype>
+        <imagetype name="progressimage">
+            <area>0,0,380,20</area>
+            <filename>images/progressbar/progressbar_large_fill.png</filename>
+        </imagetype>
+        </progressbar>
+
+        <textarea name="bufferstatus" from="basetextarea">
+            <area>230,855,400,35</area>
+            <font>basesmall</font>
+            <value></value>
+        </textarea>
+
+        <!--<imagetype name="visualizer_border">
+            <filename>mm_blackhole_border.png</filename>
+            <area>300,50,162,162,</area>
+        </imagetype>
+
+        <video name="visualizer">
+            <area>304,53,156,155,</area>
+        </video>
+
+        <textarea name="visualizername" from="basetextarea">
+            <area>304,210,156,35</area>
+            <font>basesmall</font>
+            <align>center</align>
+        </textarea>-->
+        
+        <shape name="visualizer_border">
+             <area>135,25,500,300</area>
+             <type>roundbox</type>
+             <cornerradius>2</cornerradius>
+             <fill color="#333333" alpha="180" />
+             <line color="#666666" alpha="180" width="2" />
+        </shape>
+            
+        <video name="visualizer">
+             <area>147,37,478,278</area>
+        </video>        
+
+        <textarea name="volume" from="basevolume">
+            <position>70,872</position>
+        </textarea>
+
+        <statetype name="mutestate" from="basemutestate">
+            <position>30,877</position>
+        </statetype>
+
+        <imagetype name="coverart">
+            <filename>mm_nothumb.png</filename>
+            <area>35,693,156,155</area>
+        </imagetype>
+
+        <button name="play" from="baseplaybutton">
+            <position>60,950</position>
+        </button>
+
+        <button name="stop" from="basestopbutton">
+            <position>120,950</position>
+        </button>
+
+
+    </window>
+
+    <window name="editstreammetadata">
+
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <shape name="title_bg">
+            <area>35,20,700,70</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>50,30,600,50</area>
+            <font>basegothicmedium</font>
+            <align>center,vcenter</align>
+            <value>Edycja Stacji i Kanału</value>
+        </textarea>
+
+        <shape name="settings_bg">
+            <area>35,120,700,770</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+       
+        <textarea name="stationedit_label" from="basetextarea">
+            <area>50,120,500,30</area>
+            <align>left,vcenter</align>
+            <value>Stacja:</value>
+        </textarea>
+        <textedit name="stationedit" from="basetextedit">
+            <area>100,150,500,50</area>
+        </textedit>        
+        
+        <textarea name="channel_label" from="basetextarea">
+            <area>50,230,500,30</area>
+            <align>left,vcenter</align>
+            <value>Kanał:</value>
+        </textarea>
+        <textedit name="channeledit" from="basetextedit">
+            <area>100,260,500,50</area>
+        </textedit>
+
+        <textarea name="url_label" from="basetextarea">
+            <area>50,340,500,30</area>
+            <align>left,vcenter</align>
+            <value>URL:</value>
+        </textarea>
+        <textedit name="urledit" from="basetextedit">
+            <area>100,370,500,50</area>
+        </textedit>
+
+        <textarea name="logourl_label" from="basetextarea">
+            <area>50,450,500,30</area>
+            <align>left,vcenter</align>
+            <value>Logo URL:</value>
+        </textarea>
+        <textedit name="logourledit" from="basetextedit">
+            <area>100,480,500,50</area>
+        </textedit>
+
+        <textarea name="genre_label" from="basetextarea">
+            <area>50,560,500,30</area>
+            <align>left,vcenter</align>
+            <value>Rodzaj:</value>
+        </textarea>
+        <textedit name="genreedit" from="basetextedit">
+            <area>100,590,500,50</area>
+        </textedit>
+
+        <textarea name="format_label" from="basetextarea">
+            <area>50,670,500,30</area>
+            <align>left,vcenter</align>
+            <value>Format Metadanych:</value>
+        </textarea>
+        <textedit name="formatedit" from="basetextedit">
+            <area>100,700,500,50</area>
+        </textedit>
+                
+        <button name="searchbutton" from="basebuttonwide">
+            <position>130,850</position>
+            <value>Wyszukaj...</value>
+        </button>
+
+        <button name="cancelbutton" from="basebutton">
+            <position>550,950</position>
+            <value>Rezygnuj</value>
+        </button>
+
+        <button name="savebutton" from="basebutton">
+            <position>50,950</position>
+            <value>Zapisz</value>
+        </button>
+
+    </window>
+
+    <window name="searchstream">
+
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="clock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
+        <textarea name="title" from="basetextarea">
+            <area>50,30,600,50</area>
+            <font>basegothicmedium</font>
+            <align>center,vcenter</align>
+            <value>Wyszukiwanie Stacji Radiowych</value>
+        </textarea>
+
+        <textarea name="stationlabel" >
+            <area>35,250,150,50</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Station:</value>
+        </textarea>
+        <buttonlist name="stationlist" from="basewideselector">
+            <position>200,250</position>
+        </buttonlist>
+
+        <textarea name="genrelabel" from="stationlabel">
+            <position>35,350</position>
+            <value>Genre:</value>
+        </textarea>
+        <buttonlist name="genrelist" from="basewideselector">
+            <position>200,350</position>
+        </buttonlist>
+
+        <textarea name="channellabel" from="stationlabel">
+            <position>35,450</position>
+            <value>Channel:</value>
+        </textarea>
+        <textedit name="channeledit" from="basetextedit">
+            <position>200,450</position>
+        </textedit>
+
+        <textarea name="matcheslable" from="stationlabel">
+            <area>35,600,400,50</area>
+            <align>right,vcenter</align>
+            <font>basenormal</font>
+            <value>Znaleziono:</value>
+        </textarea>
+
+        <textarea name="matchestext" from="stationlabel">
+            <area>450,600,150,50</area>
+            <font>basenormal</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <buttonlist name="streamlist">
+            <area>786,425,1136,650</area>
+            <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>1</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>2,0,1136,650</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,42</area>
+                    <shape name="item">
+                        <area>0,0,100%,41</area>
+                        <fill color="#000000" alpha="180" />
+                    </shape>
+                    <shape name="itemdiv">
+                        <area>0,41,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,41,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>40,2,36,36</area>
+                        <filename>mm_nothumb.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="station" from="buttontext">
+                        <area>100,0,200,35</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+                    <textarea name="genre" from="buttontext">
+                        <area>350,0,750,35</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+
+                <state name="selectedactive">
+                    <area>0,0,100%,42</area>
+                    <shape name="selectbar">
+                        <area>0,0,100%,41</area>
+                        <fill color="#0767AB" alpha="240" />
+                    </shape>
+                    <shape name="itemdiv">
+                        <area>0,41,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,41,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>40,2,36,36</area>
+                        <filename>mm_nothumb.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <statetype name="movestate">
+                        <area>520,15,35,35</area>
+                        <state name="off"></state>
+                        <state name="on">
+                            <imagetype name="statusimage">
+                                <filename>mm_updown.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="station" from="buttontext">
+                        <area>100,0,200,35</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+                    <textarea name="genre" from="buttontext">
+                        <area>350,0,750,35</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1160,185</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1190,185</position>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+</mythuitheme>

@@ -4,17 +4,17 @@
 
     <!-- Base Font Definitions For Arclight-->
 
-    <!-- Unselected value of each is alpha = 100 -->
+    <!-- Unselected value of  each is alpha = 100 -->
 
     <!-- Used for Edit Metadata, description text, etc. -->
     <!-- http://www.fontsite.com/download-free-fonts/cartogothic-std/ -->
-    <fontdef name="basesmall" face="CartoGothic Std">
+    <fontdef name="basesmall" face="Gill Sans">
         <pixelsize>25</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
 
     <!-- http://www.theleagueofmoveabletype.com/fonts/7-league-gothic -->
-    <fontdef name="basegothicsmall" face="League Gothic">
+    <fontdef name="basegothicsmall" face="AlternateGothicNo2EU">
         <pixelsize>25</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
@@ -48,6 +48,10 @@
     </fontdef>
 
     <fontdef name="basesmalllightblue" from="basesmall">
+        <color>#0767AB</color>
+    </fontdef>
+
+    <fontdef name="baseextrasmalllightblue" from="baseextrasmall">
         <color>#0767AB</color>
     </fontdef>
 
@@ -124,22 +128,6 @@
     <fontdef name="basegothiclarge" from="basegothicsmall">
         <pixelsize>49</pixelsize>
     </fontdef>
-
-    <!-- Slide up animation -->
-    <window name="windowslideup">
-        <animation trigger="AboutToShow">
-            <section duration="500" centre="middle">
-<!--                <alpha start="120" end="255" easingcurve="Linear" reversible="false" looped="true" />-->
-                <zoom start="0" end="100" easingcurve="OutCurve" duration="200"/>
-            </section>
-        </animation>
-        <animation trigger="AboutToHide">
-            <section duration="500" centre="middle">
-<!--                <alpha start="120" end="255" easingcurve="Linear" reversible="false" looped="true" />-->
-                <zoom start="100" end="0" easingcurve="OutCurve" duration="200"/>
-            </section>
-        </animation>
-    </window>
 
     <!-- Used for Titles -->
     <fontdef name="baseextralarge" from="basesmall">
@@ -244,19 +232,27 @@
         <buttonarea>2,0,1136,535</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <area>1,0,1132,89</area>
+                <area>1,0,1136,89</area>
                 <shape name="item">
                     <area>0,0,100%,88</area>
-                    <type>box</type>
                     <fill color="#000000" alpha="180" />
                 </shape>
+                <shape name="itemdiv">
+                    <area>0,88,100%,1</area>
+                    <fill color="#333333" alpha="180" />
+                </shape>
+                <imagetype name="divider">
+                    <area>0,88,100%,1</area>
+                    <filename>images/arclight_wide_divider.png</filename>
+                    <alpha>160</alpha>
+                </imagetype>
                 <imagetype name="coverart">
                     <area>6,2,50,85</area>
                     <preserveaspect>true</preserveaspect>
                     <alpha>160</alpha>
                 </imagetype>
                 <textarea name="title">
-                    <area>70,10,1070,40</area>
+                    <area>70,20,1070,40</area>
                     <align>left,vcenter</align>
                     <font>basemedium</font>
                     <alpha>210</alpha>
@@ -279,11 +275,6 @@
                     <font>basesmall</font>
                     <alpha>210</alpha>
                 </textarea>
-                <imagetype name="divider">
-                    <area>0,88,1136,2</area>
-                    <filename>images/baserecordinglistwide_divider.png</filename>
-                    <alpha>100</alpha>
-                </imagetype>
                 <statetype name="nodetype">
                     <state name="subfolder">
                         <imagetype name="buttonarrow">
@@ -378,12 +369,21 @@
         <buttonarea>2,0,1136,645</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <area>0,0,100%,88</area>
+                <area>0,0,1136,88</area>
                 <shape name="item">
-                    <area>0,0,100%,87</area>
-                    <type>box</type>
+                    <area>0,0,1136,87</area>
                     <fill color="#000000" alpha="180" />
                 </shape>
+                <shape name="itemdiv">
+                    <area>0,87,1136,1</area>
+                    <fill color="#333333" alpha="180" />
+                    <alpha>160</alpha>
+                </shape>
+                <imagetype name="divider">
+                    <area>0,87,1136,1</area>
+                    <filename>images/arclight_wide_divider.png</filename>
+                    <alpha>160</alpha>
+                </imagetype>
                 <textarea name="buttontext">
                     <area>10,27,1130,40</area>
                     <align>left,vcenter</align>
@@ -414,24 +414,36 @@
                     <font>basesmall</font>
                     <alpha>210</alpha>
                 </textarea>
-                <statetype name="watched">
-                    <state name="no">
-                        <textarea name="uhuh">
-                            <area>604,10,50,40</area>
-                            <align>allcenter</align>
-                            <font>basesmalllightgreen</font>
-                            <alpha>150</alpha>
-                            <value>New</value>
-                        </textarea>
-                    </state>
-                    <state name="yes" />
-                </statetype>
                 <textarea name="timedate">
                     <area>659,10,465,40</area>
                     <align>right,vcenter</align>
                     <font>basesmall</font>
                     <alpha>210</alpha>
                 </textarea>
+                <statetype name="watched">
+                    <state name="no">
+                        <textarea name="uhuh">
+                            <area>604,10,50,40</area>
+                            <align>allcenter</align>
+                            <font>baseextrasmalllightblue</font>
+                            <value>New</value>
+                        </textarea>
+                    </state>
+                    <state name="yes" />
+                </statetype>
+                <statetype name="commflagged">
+                    <state name="yes">
+                        <textarea name="ahah">
+                            <area>900,51,120,40</area>
+                            <align>allcenter</align>
+                            <font>baseextrasmalllightblue</font>
+                            <!--<color>#0767AB</color>-->
+                            <alpha>210</alpha>
+                            <value>Commflaged</value>
+                        </textarea>
+                    </state>
+                    <state name="no" />
+                </statetype>
                 <statetype name="videoprops">
                     <showempty>yes</showempty>
                     <state name="hdtv">
@@ -501,85 +513,119 @@
                         </imagetype>
                     </state>
                 </statetype>
-                <textarea name="00x00">
+                <textarea name="filesize_str">
                     <area>937,56,187,30</area>
                     <align>right,vcenter</align>
-                    <font>basesmall</font>
+                    <font>baseextraextrasmall</font>
                     <alpha>210</alpha>
                 </textarea>
-                <imagetype name="divider">
-                    <area>0,88,1136,2</area>
-                    <filename>images/baserecordinglistwide_divider.png</filename>
-                    <alpha>100</alpha>
-                </imagetype>
                 <imagetype name="buttonarrow">
                     <position>1090,32</position>
                     <filename>images/reclist-arrow-white.png</filename>
                     <alpha>210</alpha>
                 </imagetype>
             </state>
-            <state name="selectedactive" from="active">
+            <state name="selectedactive">
                 <area>0,0,100%,199</area>
                 <shape name="item">
-                    <area>0,0,100%,197</area>
-                    <fill color="#0767AB" alpha="240" />
+                    <area>0,0,100%,199</area>
+                    <fill color="#0767AB" alpha="255" />
                 </shape>
-                <textarea name="title">
-                    <alpha>200</alpha>
-                </textarea>
                 <textarea name="buttontext">
-                    <alpha>200</alpha>
+                    <area>10,27,1130,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="title">
+                    <area>10,10,573,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
                 </textarea>
                 <textarea name="subtitle">
                     <area>30,56,550,30</area>
-                    <alpha>200</alpha>
+                    <align>left,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
                 </textarea>
                 <textarea name="name">
-                    <alpha>200</alpha>
+                    <area>10,10,1000,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
                 </textarea>
                 <textarea name="url">
-                    <alpha>200</alpha>
+                    <area>30,56,1000,30</area>
+                    <align>left,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
                 </textarea>
                 <statetype name="watched">
                     <state name="no">
                         <textarea name="uhuh">
                             <area>604,10,50,40</area>
                             <align>allcenter</align>
-                            <font>basesmall</font>
+                            <font>baseextrasmall</font>
                             <alpha>210</alpha>
                             <value>New</value>
                         </textarea>
                     </state>
                     <state name="yes" />
                 </statetype>
+                <statetype name="commflagged">
+                    <state name="yes">
+                        <textarea name="ahah">
+                            <area>900,160,120,40</area>
+                            <align>allcenter</align>
+                            <font>baseextrasmall</font>
+                            <alpha>210</alpha>
+                            <value>Commflaged</value>
+                        </textarea>
+                    </state>
+                    <state name="no" />
+                </statetype>
                 <textarea name="timedate">
-                    <alpha>200</alpha>
+                    <area>659,10,465,40</area>
+                    <align>right,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
                 </textarea>
                 <statetype name="videoprops">
                     <showempty>yes</showempty>
                     <state name="hdtv">
                         <imagetype name="hdtv">
+                            <filename>images/hdicon_white.png</filename>
                             <area>730,169,170,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="hd720">
                         <imagetype name="hd720">
+                            <filename>images/720icon_white.png</filename>
                             <area>730,169,170,22</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="hd1080">
                         <imagetype name="hd1080">
+                            <filename>images/1080icon_white.png</filename>
                             <area>730,169,170,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="widescreen">
                         <imagetype name="widescreen">
+                            <filename>images/169_white.png</filename>
                             <area>730,166,170,24</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="avchd">
                         <imagetype name="avchd">
+                            <filename>images/avchd_white.png</filename>
                             <area>730,169,170,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                 </statetype>
@@ -587,78 +633,156 @@
                     <showempty>yes</showempty>
                     <state name="stereo">
                         <imagetype name="stereo">
+                            <filename>images/stereoicon_white.png</filename>
                             <area>860,169,172,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="surround">
                         <imagetype name="surround">
+                            <filename>images/51icon_white.png</filename>
                             <area>860,167,172,24</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="dolby">
                         <imagetype name="dolby">
+                            <filename>images/dolbyicon_white.png</filename>
                             <area>860,165,172,26</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="mono">
                         <imagetype name="mono">
+                            <filename>images/monoicon_white.png</filename>
                             <area>860,169,172,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                 </statetype>
-                <textarea name="00x00">
-                    <area>937,166,187,30</area>
-                    <alpha>200</alpha>
+                <textarea name="filesize_str">
+                    <area>937,164,187,30</area>
+                    <align>right,vcenter</align>
+                    <font>baseextraextrasmall</font>
+                    <alpha>210</alpha>
                 </textarea>
-                <imagetype name="divider">
-                    <filename />
-                </imagetype>
                 <imagetype name="buttonarrow">
-                    <filename>images/reclist-arrow-black.png</filename>
-                    <alpha>200</alpha>
+                    <position>1090,32</position>
+                    <filename>images/reclist-arrow-white.png</filename>
+                    <alpha>210</alpha>
                 </imagetype>
             </state>
-            <state name="selectedinactive" from="active">
+            <state name="selectedinactive">
                 <area>0,0,100%,199</area>
                 <shape name="item">
-                    <area>0,0,100%,197</area>
-                    <fill color="#222222" alpha="190" />
+                    <area>0,0,100%,198</area>
+                    <fill color="#000000" alpha="180" />
+                </shape>
+                <shape name="itemdiv">
+                    <area>0,198,100%,1</area>
+                    <fill color="#333333" alpha="180" />
+                    <alpha>160</alpha>
                 </shape>
                 <imagetype name="divider">
-                    <area>0,196,1136,2</area>
-                    <filename>images/baserecordinglistwide_divider.png</filename>
-                    <alpha>100</alpha>
+                    <area>0,198,1136,1</area>
+                    <filename>images/arclight_wide_divider.png</filename>
+                    <alpha>160</alpha>
                 </imagetype>
+                <textarea name="buttontext">
+                    <area>10,27,1130,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="title">
+                    <area>10,10,573,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="subtitle">
+                    <area>30,56,550,30</area>
+                    <align>left,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="name">
+                    <area>10,10,1000,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="url">
+                    <area>30,56,1000,30</area>
+                    <align>left,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <statetype name="watched">
+                    <state name="no">
+                        <textarea name="uhuh">
+                            <area>604,10,50,40</area>
+                            <align>allcenter</align>
+                            <font>baseextrasmall</font>
+                            <alpha>210</alpha>
+                            <value>New</value>
+                        </textarea>
+                    </state>
+                    <state name="yes" />
+                </statetype>
+                <statetype name="commflagged">
+                    <state name="yes">
+                        <textarea name="ahah">
+                            <area>900,160,120,40</area>
+                            <align>allcenter</align>
+                            <font>baseextrasmall</font>
+                            <alpha>210</alpha>
+                            <value>Commflaged</value>
+                        </textarea>
+                    </state>
+                    <state name="no" />
+                </statetype>
+                <textarea name="timedate">
+                    <area>659,10,465,40</area>
+                    <align>right,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
                 <statetype name="videoprops">
                     <showempty>yes</showempty>
                     <state name="hdtv">
                         <imagetype name="hdtv">
-                            <area>730,169,170,18</area>
                             <filename>images/hdicon_white.png</filename>
+                            <area>730,169,170,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="hd720">
                         <imagetype name="hd720">
-                            <area>730,169,170,22</area>
                             <filename>images/720icon_white.png</filename>
+                            <area>730,169,170,22</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="hd1080">
                         <imagetype name="hd1080">
-                            <area>730,169,170,18</area>
                             <filename>images/1080icon_white.png</filename>
+                            <area>730,169,170,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="widescreen">
                         <imagetype name="widescreen">
-                            <area>730,166,170,24</area>
                             <filename>images/169_white.png</filename>
+                            <area>730,166,170,24</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="avchd">
                         <imagetype name="avchd">
-                            <area>730,169,170,18</area>
                             <filename>images/avchd_white.png</filename>
+                            <area>730,169,170,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                 </statetype>
@@ -666,34 +790,44 @@
                     <showempty>yes</showempty>
                     <state name="stereo">
                         <imagetype name="stereo">
-                            <area>860,169,172,18</area>
                             <filename>images/stereoicon_white.png</filename>
+                            <area>860,169,172,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="surround">
                         <imagetype name="surround">
-                            <area>860,167,172,24</area>
                             <filename>images/51icon_white.png</filename>
+                            <area>860,167,172,24</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="dolby">
                         <imagetype name="dolby">
-                            <area>860,165,172,26</area>
                             <filename>images/dolbyicon_white.png</filename>
+                            <area>860,165,172,26</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                     <state name="mono">
                         <imagetype name="mono">
-                            <area>860,169,172,18</area>
                             <filename>images/monoicon_white.png</filename>
+                            <area>860,169,172,18</area>
+                            <preserveaspect>true</preserveaspect>
                         </imagetype>
                     </state>
                 </statetype>
-                <textarea name="00x00">
-                    <area>937,166,187,30</area>
-                    <alpha>200</alpha>
-                    <font>basesmall</font>
+                <textarea name="filesize_str">
+                    <area>937,164,187,30</area>
+                    <align>right,vcenter</align>
+                    <font>baseextraextrasmall</font>
+                    <alpha>210</alpha>
                 </textarea>
+                <imagetype name="buttonarrow">
+                    <position>1090,32</position>
+                    <filename>images/reclist-arrow-white.png</filename>
+                    <alpha>210</alpha>
+                </imagetype>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
@@ -736,9 +870,17 @@
                 <area>0,0,100%,89</area>
                 <shape name="item">
                     <area>0,0,100%,88</area>
-                    <type>box</type>
                     <fill color="#000000" alpha="180" />
                 </shape>
+                <shape name="itemdiv">
+                    <area>0,88,1136,1</area>
+                    <fill color="#333333" alpha="180" />
+                </shape>
+                <imagetype name="divider">
+                    <area>0,88,1136,1</area>
+                    <filename>images/arclight_wide_divider.png</filename>
+                    <alpha>160</alpha>
+                </imagetype>
                 <textarea name="buttontext">
                     <area>13,27,1130,40</area>
                     <align>left,vcenter</align>
@@ -848,14 +990,9 @@
                 <textarea name="filesize_str">
                     <area>937,56,187,30</area>
                     <align>right,vcenter</align>
-                    <font>basesmall</font>
+                    <font>baseextraextrasmall</font>
                     <alpha>210</alpha>
                 </textarea>
-                <imagetype name="divider">
-                    <area>0,88,1136,2</area>
-                    <filename>images/baserecordinglistwide_divider.png</filename>
-                    <alpha>100</alpha>
-                </imagetype>
                 <imagetype name="buttonarrow">
                     <position>1090,32</position>
                     <filename>images/reclist-arrow-white.png</filename>
@@ -1023,7 +1160,7 @@
                     <alpha>100</alpha>
                 </textarea>
                 <imagetype name="divider">
-                    <area>10,48,631,2</area>
+                    <area>10,49,661,1</area>
                     <filename>images/arclight_wide_divider.png</filename>
                 </imagetype>
                 <statetype name="buttoncheck">
@@ -1082,18 +1219,18 @@
                 <shape name="item">
                     <area>0,0,100%,49</area>
                     <type>box</type>
-                    <fill color="#000000" alpha="160" />
+                    <fill color="#000000" alpha="180" />
                 </shape>
+                <imagetype name="divider">
+                    <area>10,49,747,1</area>
+                    <filename>images/arclight_wide_divider.png</filename>
+                </imagetype>
                 <textarea name="buttontext">
                     <area>5,9,757,40</area>
                     <align>allcenter</align>
                     <font>basesmall</font>
                     <alpha>100</alpha>
                 </textarea>
-                <imagetype name="divider">
-                    <area>10,48,631,2</area>
-                    <filename>images/arclight_wide_divider.png</filename>
-                </imagetype>
                 <statetype name="buttoncheck">
                     <position>91%,10</position>
                     <state type="off">
@@ -1122,7 +1259,7 @@
             </state>
             <state name="selectedinactive" from="active">
                 <shape name="item">
-                    <fill color="#222222" alpha="180" />
+                    <fill color="#222222" alpha="200" />
                 </shape>
                 <textarea name="buttontext">
                     <alpha>200</alpha>
@@ -1169,24 +1306,27 @@
         <drawfrombottom>true</drawfrombottom>
         <buttonarea>2,0,1136,1000</buttonarea>
         <statetype name="buttonitem">
-            <area>0,0,767,50</area>
+            <area>0,0,1136,50</area>
             <state name="active">
-                <area>0,0,100%,50</area>
+                <area>0,0,1136,50</area>
                 <shape name="item">
-                    <area>0,0,100%,49</area>
-                    <type>box</type>
-                    <fill color="#000000" alpha="160" />
+                    <area>0,0,1136,49</area>
+                    <fill color="#000000" alpha="200" />
                 </shape>
-                <textarea name="buttontext">
-                    <area>5,9,757,40</area>
-                    <align>allcenter</align>
-                    <font>basesmall</font>
-                    <alpha>100</alpha>
-                </textarea>
+                <shape name="itemdiv">
+                    <area>0,49,1136,3</area>
+                    <fill color="#000000" alpha="180" />
+                </shape>
                 <imagetype name="divider">
-                    <area>10,48,631,2</area>
+                    <area>10,49,1116,1</area>
                     <filename>images/arclight_wide_divider.png</filename>
                 </imagetype>
+                <textarea name="buttontext">
+                    <area>5,0,757,40</area>
+                    <align>allcenter</align>
+                    <font>basesmall</font>
+                    <alpha>120</alpha>
+                </textarea>
                 <statetype name="buttoncheck">
                     <position>91%,10</position>
                     <state type="off">
@@ -1688,7 +1828,7 @@
         <textarea name="text">
             <area>5,8,490,30</area>
             <font>basesmall</font>
-            <align>left,vcenter</align>
+            <align>allcenter</align>
         </textarea>
     </textedit>
 
@@ -1896,8 +2036,20 @@
     </window>
 
     <!-- Popup Dialogue Box -->
-    <window name="MythPopupBox" from="windowslideup">
+    <window name="MythPopupBox">
         <area>-1,-1,518,633</area>
+
+        <animation trigger="AboutToShow">
+            <section duration="700" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutElastic" duration="700" />
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section duration="1500" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
 
         <imagetype name="backimg">
             <filename>images/arclight_popup_bg2.png</filename>
@@ -1925,8 +2077,20 @@
     </window>
 
     <!-- Large Popup Box -->
-    <window name="MythDialogBox" from="windowslideup">
+    <window name="MythDialogBox">
         <area>-1,-1,790,962</area>
+
+        <animation trigger="AboutToShow">
+            <section duration="700" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutElastic" duration="700" />
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section duration="1500" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
 
         <imagetype name="backimg">
             <area>0,0,790,962</area>
@@ -2066,7 +2230,7 @@
 
     </window>
 
-    <window name="MythProgressDialog" from="windowslideup">
+    <window name="MythProgressDialog">
         <area>1200,780,706,298</area>
 
         <imagetype name="entry_bg">
@@ -2097,18 +2261,37 @@
 
     </window>
 
-    <window name="MythConfirmationDialog" from="windowslideup">
+    <window name="MythConfirmationDialog">
         <area>-1,-1,706,298</area>
+
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutQuint" duration="500" />
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section duration="1500" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
 
         <imagetype name="entry_bg">
             <position>0,0</position>
             <filename>images/textentry_bg.png</filename>
         </imagetype>
 
+        <imagetype name="divider">
+            <area>20,80,666,2</area>
+            <filename>images/arclight_popup_divider.png</filename>
+            <alpha>255</alpha>
+        </imagetype>
+
         <textarea name="message" from="basetextarea">
-            <area>75,40,554,150</area>
+            <area>40,36,624,200</area>
             <font>basesmall</font>
-            <align>center</align>
+            <!--<align>vtop,hcenter</align>-->
+            <align>vtop</align>
             <multiline>yes</multiline>
         </textarea>
 
@@ -2129,8 +2312,20 @@
 
     </window>
 
-    <window name="MythTextInputDialog" from="windowslideup">
+    <window name="MythTextInputDialog">
         <area>-1,-1,706,298</area>
+
+        <animation trigger="AboutToShow">
+            <section duration="700" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutElastic" duration="700" />
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section duration="1500" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
 
         <imagetype name="entry_bg">
             <position>0,0</position>
@@ -2160,8 +2355,20 @@
 
     </window>
 
-    <window name="MythSearchListDialog" from="windowslideup">
+    <window name="MythSearchListDialog">
         <area>-1,-1,706,298</area>
+
+        <animation trigger="AboutToShow">
+            <section duration="700" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutElastic" duration="700" />
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section duration="1500" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
 
         <imagetype name="entry_bg">
             <position>0,0</position>
@@ -2208,8 +2415,20 @@
 
     </window>
 
-    <window name="MythSearchDialog" from="windowslideup">
+    <window name="MythSearchDialog">
         <area>-1,-1,518,633</area>
+
+        <animation trigger="AboutToShow">
+            <section duration="700" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutElastic" duration="700" />
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section duration="1500" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
 
         <imagetype name="backimg">
             <filename>images/arclight_search_bg.png</filename>
@@ -2468,7 +2687,7 @@
 
     </window>
 
-    <window name="videowindow" from="windowslideup">
+    <window name="videowindow">
         <area>-1,-1,706,298</area>
 
         <imagetype name="entry_bg">

@@ -2,25 +2,25 @@
 
   <window name="keyboard">
 
-    <font name="normal" face="CartoGothic Std">
+    <font name="normal" face="Gill Sans">
       <color>#ffffff</color>
       <size>10</size>
       <bold>yes</bold>
     </font>
 
-    <font name="focused" face="CartoGothic Std">
+    <font name="focused" face="Gill Sans">
       <color>#ffffff</color>
       <size>10</size>
       <bold>yes</bold>
     </font>
 
-    <font name="down" face="CartoGothic Std">
+    <font name="down" face="Gill Sans">
       <color>#ffffff</color>
       <size>10</size>
       <bold>yes</bold>
     </font>
 
-    <font name="downfocused" face="CartoGothic Std">
+    <font name="downfocused" face="Gill Sans">
       <color>#ffffff</color>
       <size>10</size>
       <bold>yes</bold>

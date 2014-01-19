@@ -69,21 +69,29 @@
         </textarea>
 
         <buttonlist name="images">
-            <area>786,90,1136,1000</area>
+            <area>786,100,1136,1000</area>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
-            <spacing>2</spacing>
+            <!--<spacing>2</spacing>-->
             <drawfrombottom>true</drawfrombottom>
             <buttonarea>0,0,100%,1000</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,89</area>
                     <shape name="item">
-                        <area>0,0,100%,89</area>
-                        <type>box</type>
+                        <area>0,0,100%,88</area>
                         <fill color="#000000" alpha="180" />
                     </shape>
+                    <shape name="itemdiv">
+                        <area>0,88,1136,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,88,1136,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
                     <imagetype name="buttonimage">
                         <area>6,5,150,81</area>
                         <preserveaspect>true</preserveaspect>
@@ -95,11 +103,6 @@
                         <font>basemedium</font>
                         <alpha>210</alpha>
                     </textarea>
-                    <imagetype name="divider">
-                        <area>0,88,1136,2</area>
-                        <filename>images/baserecordinglistwide_divider.png</filename>
-                        <alpha>100</alpha>
-                    </imagetype>
                     <statetype name="nodetype">
                         <state name="subfolder">
                             <imagetype name="buttonarrow">

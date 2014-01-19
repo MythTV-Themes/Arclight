@@ -163,6 +163,22 @@
                                 <alphapulse min="80" max="255" change="2"/>
                             </textarea>
                         </state>
+                        <state name="commflagging">
+                            <area>0,0,100%,100%</area>
+                            <shape name="animation">
+                                <area>0,0,100%,100%</area>
+                                <fill color="#000000" alpha="0" />
+                                <line color="#0000FF" alpha="255" />
+                            </shape>
+                            <textarea name="trans">
+                                <area>542,56,300,30</area>
+                                <align>allcenter</align>
+                                <font>basesmallblue</font>
+                                <alpha>210</alpha>
+                                <value>Commflaging...</value>
+                                <alphapulse min="80" max="255" change="2"/>
+                            </textarea>
+                        </state>
                     </statetype>
                     <statetype name="playlist">
                         <state name="yes">
@@ -248,6 +264,23 @@
                                 <alphapulse min="80" max="255" change="2"/>
                             </textarea>
                         </state>
+                        <state name="commflagging">
+                            <area>0,0,100%,100%</area>
+                            <shape name="animation">
+                                <area>0,0,100%,100%</area>
+                                <fill color="#000000" alpha="0" />
+                                <line color="#0000FF" alpha="255" />
+                                <alphapulse min="80" max="255" change="2"/>
+                            </shape>
+                            <textarea name="trans">
+                                <area>542,166,300,30</area>
+                                <align>allcenter</align>
+                                <font>basesmallblue</font>
+                                <alpha>210</alpha>
+                                <value>Commflagging...</value>
+                                <alphapulse min="80" max="255" change="2"/>
+                            </textarea>
+                        </state>
                     </statetype>
                     <statetype name="playlist">
                         <state name="yes">
@@ -328,6 +361,23 @@
                                 <font>basesmall</font>
                                 <alpha>210</alpha>
                                 <value>Transcoding...</value>
+                                <alphapulse min="80" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="commflagging">
+                            <area>0,0,100%,100%</area>
+                            <shape name="animation">
+                                <area>0,0,100%,100%</area>
+                                <fill color="#000000" alpha="0" />
+                                <line color="#0000FF" alpha="255" />
+                                <alphapulse min="80" max="255" change="2"/>
+                            </shape>
+                            <textarea name="trans">
+                                <area>531,166,300,30</area>
+                                <align>allcenter</align>
+                                <font>basesmall</font>
+                                <alpha>210</alpha>
+                                <value>Commflagging...</value>
                                 <alphapulse min="80" max="255" change="2"/>
                             </textarea>
                         </state>
@@ -415,6 +465,18 @@
 
     <window name="changeview">
         <area>-1,-1,790,962</area>
+
+        <animation trigger="AboutToShow">
+            <section duration="700" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutElastic" duration="700" />
+            </section>
+        </animation>
+                                                        
+        <animation trigger="AboutToHide">
+            <section duration="2000" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
 
         <imagetype name="backimg">
             <area>0,0,790,962</area>
@@ -565,6 +627,18 @@
     <window name="groupselector">
         <area>-1,-1,518,633</area>
 
+        <animation trigger="AboutToShow">
+            <section duration="700" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutElastic" duration="700" />
+            </section>
+        </animation>
+                                                        
+        <animation trigger="AboutToHide">
+            <section duration="1500" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
+
         <imagetype name="backimg">
             <filename>images/arclight_popup_bg2.png</filename>
         </imagetype>
@@ -594,6 +668,18 @@
 
     <window name="iconhelp">
         <area>0,0,1920,1080</area>
+
+        <animation trigger="AboutToShow">
+            <section duration="700" centre="middle">
+                <zoom start="80" end="100" easingcurve="OutElastic" duration="700" />
+            </section>
+        </animation>
+                                                        
+        <animation trigger="AboutToHide">
+            <section duration="2000" centre="middle">
+                <alpha start="255" end="0" easingcurve="Linear" reversible="false" looped="false" />
+            </section>
+        </animation>
 
         <imagetype name="fanart">
             <area>0,0,1920,1080</area>
@@ -734,7 +820,7 @@
                         <alpha>210</alpha>
                     </textarea>
                     <imagetype name="divider">
-                        <area>0,88,1136,2</area>
+                        <area>0,88,1136,1</area>
                         <filename>images/baserecordinglistwide_divider.png</filename>
                         <alpha>100</alpha>
                     </imagetype>

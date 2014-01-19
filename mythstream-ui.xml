@@ -1,0 +1,641 @@
+<mythuitheme>
+
+  <window name="stream">
+
+    <font name="active" face="Gill Sans">
+      <color>#888888</color>
+      <size>14</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="label" face="Gill Sans">
+      <color>#0767ab</color>
+      <size>14</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="inactive" face="Gill Sans">
+      <color>#ffffff</color>
+      <size>16</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="status" face="Gill Sans">
+      <color>#ffffff</color>
+      <size>14</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="title" face="Gill Sans">
+      <color>#ffffff</color>
+      <dropcolor>#000000</dropcolor>
+      <size>18</size>
+      <size:small>16</size:small>
+      <size:big>22</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="desc" face="Gill Sans">
+      <color>#aaaaaa</color>
+      <dropcolor>#000000</dropcolor>
+      <size>14</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="info" face="Gill Sans">
+      <color>#ffffff</color>
+      <dropcolor>#000000</dropcolor>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <size>14</size>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="mode" face="Gill Sans">
+      <color>#dddd00</color>
+      <dropcolor>#000000</dropcolor>
+      <size>14</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="message" face="Gill Sans">
+      <color>#ffffff</color>
+      <dropcolor>#000000</dropcolor>
+      <size>14</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+    
+    <font name="browse_state" face="Gill Sans">
+      <color>#ffffff</color>
+      <dropcolor>#000000</dropcolor>
+      <size>16</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="harvest_state" face="Gill Sans">
+      <color>#AAFFAA</color>
+      <dropcolor>#000000</dropcolor>
+      <size>14</size>
+      <size:small>12</size:small>
+      <size:big>16</size:big>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <font name="caption" face="Gill Sans">
+      <color>#ffffff</color>
+      <dropcolor>#000000</dropcolor>
+      <size:small>10</size:small>
+      <size:big>14</size:big>
+      <size>12</size>
+      <shadow>2,2</shadow>
+      <bold>yes</bold>
+    </font>
+
+    <container name="status_panel">
+      <area>0,0,1920,1080</area>
+
+      <textarea name="statuslabel" draworder="6">
+        <area>40,45,400,40</area>
+        <font>label</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="status" draworder="6">
+        <area>130,45,300,40</area>
+        <font>status</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="timelabel" draworder="6">
+        <area>40,75,400,30</area>
+        <font>label</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="time" draworder="6">
+        <area>130,75,300,30</area>
+        <font>status</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="cachelabel" draworder="6">
+        <area>40,135,100,30</area>
+        <font>label</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <statusbar name="cachebar" draworder="7" whitespace="5">
+          <container fleximage="no">mythstream/gauge-bg.png</container>
+          <fill>mythstream/gauge.png</fill>
+          <position>135,137</position>
+          <orientation>LeftToRight</orientation>
+      </statusbar>
+
+      <textarea name="stabilitylabel" draworder="6">
+        <area>40,165,100,30</area>
+        <font>label</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <statusbar name="stabilitybar" draworder="7" whitespace="5">
+          <container fleximage="no">mythstream/gauge-bg.png</container>
+          <fill>mythstream/gauge.png</fill>
+          <position>135,165</position>
+          <orientation>LeftToRight</orientation>
+      </statusbar>
+
+      <textarea name="playlabel" draworder="6">
+        <area>450,45,150,30</area>
+        <font>label</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <statusbar name="playled" draworder="7" whitespace="5">
+          <container fleximage="no">led-bg.png</container>
+          <fill>led-green.png</fill>
+          <position>610,47</position>
+          <orientation>LeftToRight</orientation>
+      </statusbar>
+
+      <textarea name="harvestlabel" draworder="6">
+        <area>450,75,150,30</area>
+        <font>label</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <statusbar name="harvestled" draworder="7" whitespace="5">
+          <container fleximage="no">led-bg.png</container>
+          <fill>led-red.png</fill>
+          <position>610,77</position>
+          <orientation>LeftToRight</orientation>
+      </statusbar>
+
+      <textarea name="message" draworder="6">
+        <area>40,220,600,30</area>
+        <font>message</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="custominfo" draworder="6">
+        <area>45,280,600,30</area>
+        <font>title</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <image name="lines" draworder="5" fleximage="no">
+        <filename>mythstream/stream-top.png</filename>
+        <position>0,0</position>
+      </image>
+
+    </container>
+
+    <container name="dyn_panel">
+      <area>100,400,550,120</area>
+
+<!--      <image name="fftframe" draworder="1" fleximage="no">
+        <filename>stream-fft.png</filename>
+        <position>5,10</position>
+      </image> -->
+      
+      <blackhole name="fft">
+        <area>5,0,540,110</area>
+      </blackhole>
+    
+    </container>
+
+
+
+    <container name="audio_panel">
+      <area>20,710,720,250</area>
+
+      <textarea name="title" draworder="6">
+        <area>25,10,600,25</area>
+        <font>info</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="description" draworder="6">
+        <area>25,45,600,25</area>
+        <font>info</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="audformat" draworder="6">
+        <area>25,75,600,25</area>
+        <font>label</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="quality" draworder="6">
+        <area>25,105,600,25</area>
+        <font>label</font>
+        <multiline>no</multiline>
+      </textarea>
+	  
+	  <image name="separator" draworder="6" fleximage="no">
+		  <filename>mythstream/separator.png</filename>
+		  <position>20,140</position>
+	  </image>
+
+	  <textarea name="custom1" draworder="6">
+		  <area>25,155,600,25</area>
+		  <font>info</font>
+		  <multiline>no</multiline>
+	  </textarea>
+	  
+	  <textarea name="custom2" draworder="6">
+		  <area>25,185,600,25</area>
+		  <font>label</font>
+		  <multiline>no</multiline>
+	  </textarea>
+	  
+	  <textarea name="custom3" draworder="6">
+		  <area>25,215,600,25</area>
+		  <font>label</font>
+		  <multiline>no</multiline>
+	  </textarea>
+      
+	  <textarea name="custom4" draworder="6">
+		  <area>25,245,600,25</area>
+		  <font>active</font>
+		  <multiline>no</multiline>
+	  </textarea>
+	  
+	  <textarea name="custom5" draworder="6">
+		  <area>25,275,600,25</area>
+		  <font>active</font>
+		  <multiline>no</multiline>
+	  </textarea>
+
+     <textbutton name="button1" draworder="0">
+        <position>0,255</position>
+        <image function="on" filename="text_button_on.png"></image>
+        <image function="off" filename="text_button_off.png"></image>
+        <image function="pushed" filename="text_button_pushed.png"></image>
+        <font>caption</font>
+     </textbutton>
+
+     <textbutton name="button2" draworder="0">
+        <position>300,255</position>
+        <image function="on" filename="text_button_on.png"></image>
+        <image function="off" filename="text_button_off.png"></image>
+        <image function="pushed" filename="text_button_pushed.png"></image>
+        <font>caption</font>
+     </textbutton>
+	  
+     <textbutton name="button3" draworder="0">
+        <position>600,255</position>
+        <image function="on" filename="text_button_on.png"></image>
+        <image function="off" filename="text_button_off.png"></image>
+        <image function="pushed" filename="text_button_pushed.png"></image>
+        <font>caption</font>
+     </textbutton>
+     
+<!--     <image name="lines" draworder="5" fleximage="no">
+        <filename>stream-bot.png</filename>
+        <position>0,0</position>
+      </image> -->
+
+    </container>
+
+
+    <container name="information_panel">
+      <area>20,400,1260,305</area>
+
+      <textarea name="title" draworder="6">
+        <area>15,10,1260,25</area>
+        <font>title</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="field1" draworder="6">
+        <area>15,40,1260,25</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="field2" draworder="6">
+        <area>15,70,1260,25</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="area1" draworder="6">
+        <area>15,100,1260,75</area>
+        <font>active</font>
+        <multiline>yes</multiline>
+      </textarea>
+
+      <image name="lines" draworder="5" fleximage="no">
+        <filename>mythstream/stream-bot.png</filename>
+        <position>0,0</position>
+      </image>
+
+    </container>
+
+
+    <container name="browse_panel">
+      <area>790,780,1150,305</area>
+
+      <image name="lines" draworder="3" fleximage="no">
+        <filename>mythstream/stream-bot.png</filename>
+        <position>0,0</position>
+      </image>
+
+      <textarea name="browse_title" draworder="4">
+        <area>15,6,1230,30</area>
+        <font>browse_state</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="harvest_title" draworder="4">
+        <area>15,6,1230,30</area>
+        <font>harvest_state</font>
+        <multiline>no</multiline>
+      </textarea>
+      
+      <textarea name="folder1" draworder="6">
+        <area>15,250,180,30</area>
+        <font>inactive</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="folder2" draworder="6">
+        <area>190,250,180,30</area>
+        <font>inactive</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="folder3" draworder="6">
+        <area>385,250,180,30</area>
+        <font>inactive</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="folder4" draworder="6">
+        <area>579,250,180,30</area>
+        <font>inactive</font>
+        <multiline>no</multiline>
+      </textarea>
+      
+      <image name="folder_left" draworder="4" fleximage="no">
+        <filename>mythstream/i_left.png</filename>
+        <position>0,255</position>
+      </image>      
+      <image name="folder_right" draworder="4" fleximage="no">
+        <filename>mythstream/i_right.png</filename>
+        <position>739,255</position>
+      </image>
+      
+
+      <image name="item_image1" draworder="6" fleximage="no">
+        <filename>mythstream/i_url.png</filename>
+        <position>15,47</position>
+      </image>
+
+      <image name="item_image2" draworder="6" fleximage="no">
+        <filename>mythstream/i_url.png</filename>
+        <position>15,75</position>
+      </image>
+
+      <image name="item_image3" draworder="6" fleximage="no">
+        <filename>mythstream/i_url.png</filename>
+        <position>15,103</position>
+      </image>
+            
+      <image name="item_image4" draworder="6" fleximage="no">
+        <filename>mythstream/i_url.png</filename>
+        <position>15,131</position>
+      </image>
+      
+      <image name="item_image5" draworder="6" fleximage="no">
+        <filename>mythstream/i_url.png</filename>
+        <position>15,159</position>
+      </image>
+      
+      <image name="item_image6" draworder="6" fleximage="no">
+        <filename>mythstream/i_url.png</filename>
+        <position>15,187</position>
+      </image>
+      
+      <image name="item_image7" draworder="6" fleximage="no">
+        <filename>mythstream/i_url.png</filename>
+        <position>15,215</position>
+      </image>
+      
+      <textarea name="item1" draworder="6">
+        <area>35,45,730,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="item2" draworder="6">
+        <area>35,73,730,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="item3" draworder="6">
+        <area>35,101,730,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="item4" draworder="6">
+        <area>35,129,730,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="item5" draworder="6">
+        <area>35,157,730,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="item6" draworder="6">
+        <area>35,185,730,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+      <textarea name="item7" draworder="6">
+        <area>35,213,730,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+            
+      <image name="folder_cursor" draworder="4" fleximage="no">
+        <filename>mythstream/stream-cursorleft.png</filename>
+        <position>0,245</position>
+      </image>
+      
+      <image name="item_cursor" draworder="5" fleximage="no">
+        <filename>mythstream/stream-cursorright.png</filename>
+        <position>5,135</position>
+      </image>
+
+    </container>
+
+    <container name="myicons">
+      <image name="streampict" draworder="5" fleximage="no">
+        <filename>mythstream/i_stream.png</filename>
+      </image>
+      <image name="urlpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_url.png</filename>
+      </image>
+      <image name="unknownpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_unknown.png</filename>
+      </image>
+      <image name="infopict" draworder="5" fleximage="no">
+        <filename>mythstream/i_info.png</filename>
+      </image>
+      <image name="htmlpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_html.png</filename>
+      </image>
+      <image name="scheduledpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_scheduled.png</filename>
+      </image>
+      <image name="recordingpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_recording.png</filename>
+      </image>
+      <image name="recordedpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_recorded.png</filename>
+      </image>
+      <image name="generalpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_general.png</filename>
+      </image>
+      <image name="downloadpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_download.png</filename>
+      </image>
+      <image name="headerpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_header.png</filename>
+      </image>
+      <image name="markedpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_marked.png</filename>
+      </image>
+      <image name="emptypict" draworder="5" fleximage="no">
+        <filename>mythstream/i_empty.png</filename>
+      </image>
+      <image name="leftpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_left.png</filename>
+      </image>
+      <image name="rightpict" draworder="5" fleximage="no">
+        <filename>mythstream/i_right.png</filename>
+      </image>
+    </container>
+
+    <container name="video_panel">
+      <area>20,170,1260,550</area>
+
+      <textarea name="title" draworder="6">
+        <area>17,9,1260,25</area>
+        <font>title</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="description" draworder="6">
+        <area>17,45,1260,25</area>
+        <font>title</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="audformat" draworder="6">
+        <area>17,74,735,25</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="quality" draworder="6">
+        <area>17,104,735,25</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="videocodec" draworder="6">
+        <area>17,134,735,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="videoquality" draworder="6">
+        <area>17,164,735,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="format" draworder="6">
+        <area>0,0,735,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="fps" draworder="6">
+        <area>0,0,735,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="length" draworder="6">
+        <area>0,0,737,30</area>
+        <font>active</font>
+        <multiline>no</multiline>
+      </textarea>
+
+      <textarea name="mode" draworder="6">
+        <area>17,737,300,25</area>
+        <font>mode</font>
+        <multiline>no</multiline>
+      </textarea>
+      
+      <image name="lines" draworder="6" fleximage="no">
+        <filename>mythstream/stream-vidbot.png</filename>
+        <position>0,0</position>
+      </image>
+
+      <image name="video" draworder="6" fleximage="no">
+        <filename>mythstream/video-frame.png</filename>
+        <position>784,67</position>
+      </image>
+
+    </container>
+
+
+    <container name="video">
+      <area>823,256,400,300</area>
+    </container>
+
+    <container name="maxvideo">
+      <area>0,0,1280,720</area>
+    </container>
+
+    <container name="viewer">
+      <area>20,400,1260,305</area>
+    </container>
+
+    <container name="maxviewer">
+      <area>0,0,1280,720</area>
+    </container>
+
+
+  </window>
+
+</mythuitheme>

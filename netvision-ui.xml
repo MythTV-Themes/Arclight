@@ -100,9 +100,17 @@
                     <area>0,0,100%,100</area>
                     <shape name="item">
                         <area>0,0,100%,99</area>
-                        <type>box</type>
                         <fill color="#000000" alpha="160" />
                     </shape>
+                    <shape name="itemdiv">
+                        <area>0,99,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,99,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
                     <imagetype name="buttonimage">
                         <area>30,5,90,90</area>
                         <preserveaspect>true</preserveaspect>
@@ -119,10 +127,6 @@
                         <font>basemedium</font>
                         <alpha>100</alpha>
                     </textarea>
-                    <imagetype name="divider">
-                        <area>10,98,631,2</area>
-                        <filename>images/arclight_wide_divider.png</filename>
-                    </imagetype>
                     <statetype name="buttoncheck">
                         <position>91%,10</position>
                         <state type="off">
@@ -206,10 +210,18 @@
                 <state name="active">
                     <area>0,0,100%,89</area>
                     <shape name="item">
-                        <area>0,0,100%,89</area>
-                        <type>box</type>
+                        <area>0,0,100%,88</area>
                         <fill color="#000000" alpha="180" />
                     </shape>
+                    <shape name="itemdiv">
+                        <area>0,88,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,88,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
                     <imagetype name="buttonimage">
                         <area>6,3,83,83</area>
                         <preserveaspect>true</preserveaspect>
@@ -245,11 +257,6 @@
                         <alpha>210</alpha>
                         <multiline>true</multiline>
                     </textarea>
-                    <imagetype name="divider">
-                        <area>0,88,1136,2</area>
-                        <filename>images/baserecordinglistwide_divider.png</filename>
-                        <alpha>100</alpha>
-                    </imagetype>
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
@@ -582,10 +589,18 @@
                 <state name="active">
                     <area>0,0,100%,89</area>
                     <shape name="item">
-                        <area>0,0,100%,89</area>
-                        <type>box</type>
+                        <area>0,0,100%,88</area>
                         <fill color="#000000" alpha="180" />
                     </shape>
+                    <shape name="itemdiv">
+                        <area>0,88,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,88,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
                     <imagetype name="buttonimage">
                         <area>30,5,110,79</area>
                         <alpha>160</alpha>
@@ -597,11 +612,6 @@
                         <font>basemedium</font>
                         <alpha>210</alpha>
                     </textarea>
-                    <imagetype name="divider">
-                        <area>0,88,1136,2</area>
-                        <filename>images/baserecordinglistwide_divider.png</filename>
-                        <alpha>100</alpha>
-                    </imagetype>
                     <statetype name="buttoncheck">
                         <state type="off">
                         </state>
@@ -757,10 +767,18 @@
                 <state name="active">
                     <area>0,0,100%,89</area>
                     <shape name="item">
-                        <area>0,0,100%,89</area>
-                        <type>box</type>
+                        <area>0,0,100%,88</area>
                         <fill color="#000000" alpha="180" />
                     </shape>
+                    <shape name="itemdiv">
+                        <area>0,88,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,88,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
                     <imagetype name="buttonimage">
                         <area>0,5,110,79</area>
                         <alpha>160</alpha>
@@ -772,11 +790,6 @@
                         <font>basemedium</font>
                         <alpha>210</alpha>
                     </textarea>
-                    <imagetype name="divider">
-                        <area>0,88,1136,2</area>
-                        <filename>images/baserecordinglistwide_divider.png</filename>
-                        <alpha>100</alpha>
-                    </imagetype>
                     <statetype name="buttoncheck">
                         <state type="off">
                         </state>
@@ -1146,9 +1159,17 @@
                     <area>1,0,1132,89</area>
                     <shape name="item">
                         <area>0,0,100%,88</area>
-                        <type>box</type>
                         <fill color="#000000" alpha="180" />
                     </shape>
+                    <shape name="itemdiv">
+                        <area>0,88,100%,1</area>
+                        <fill color="#333333" alpha="180" />
+                    </shape>
+                    <imagetype name="divider">
+                        <area>0,88,100%,1</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                        <alpha>160</alpha>
+                    </imagetype>
                     <imagetype name="buttonimage">
                         <area>6,2,50,85</area>
                         <preserveaspect>true</preserveaspect>
@@ -1178,11 +1199,6 @@
                         <font>basesmall</font>
                         <alpha>210</alpha>
                     </textarea>
-                    <imagetype name="divider">
-                        <area>0,88,1136,2</area>
-                        <filename>images/baserecordinglistwide_divider.png</filename>
-                        <alpha>100</alpha>
-                    </imagetype>
                     <statetype name="nodetype">
                         <state name="subfolder">
                             <imagetype name="buttonarrow">

@@ -348,7 +348,7 @@
 
         <button name="delete" from="basebuttonwide">
             <position>202,585</position>
-            <value>Delete Channels</value>
+            <value>Delete Source</value>
             <helptext></helptext>
         </button>
 
@@ -804,7 +804,7 @@
         </textarea>
 
         <textarea name="dailyupdates_text" from="basetextarea">
-            <area>195,700,500,40</area>
+            <area>255,700,400,40</area>
             <value>Perform daily updates of recording artwork</value>
             <align>left,vcenter</align>
         </textarea>
@@ -824,7 +824,7 @@
         </buttonlist>
 
         <checkbox name="dailyupdates" from="basecheckbox">
-            <position>155,702</position>
+            <position>215,702</position>
         </checkbox>
 
         <imagetype name="dialogboxoverlay">
