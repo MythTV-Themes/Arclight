@@ -110,15 +110,15 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>936,60,1001,990</area>
+            <area>813,60,1001,990</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
             <buttonarea>0,0,1001,36</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,245,36</area>
+                <area>0,0,250,36</area>
                 <state name="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,245,36</area>
+                        <area>0,0,250,36</area>
                         <font>basesmall</font>
                         <align>hcenter,bottom</align>
                     </textarea>
@@ -329,15 +329,15 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>936,505,1001,445</area>
+            <area>813,505,1001,445</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
             <buttonarea>0,0,1001,36</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,245,36</area>
+                <area>0,0,250,36</area>
                 <state name="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,245,36</area>
+                        <area>0,0,250,36</area>
                         <font>basesmall</font>
                         <align>hcenter,bottom</align>
                     </textarea>
