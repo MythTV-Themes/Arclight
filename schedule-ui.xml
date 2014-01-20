@@ -109,8 +109,13 @@
             <font>basesmall</font>
         </guidegrid>
 
+        <textarea name="datetext" from="basetextarea">
+            <area>790,50,120,50</area>
+            <align>left,vcenter</align>
+        </textarea>
+			
         <buttonlist name="timelist">
-            <area>813,60,1001,990</area>
+            <area>813,50,1001,990</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
             <buttonarea>0,0,1001,36</buttonarea>
@@ -328,8 +333,13 @@
             <font>basesmall</font>
         </guidegrid>
 
+        <textarea name="datetext" from="basetextarea">
+            <area>790,495,120,50</area>
+            <align>left,vcenter</align>
+        </textarea>
+			
         <buttonlist name="timelist">
-            <area>813,505,1001,445</area>
+            <area>813,495,1001,445</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
             <buttonarea>0,0,1001,36</buttonarea>
