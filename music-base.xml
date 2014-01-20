@@ -39,41 +39,20 @@
                 </textarea>
                 <statetype name="playstate">
                     <state name="playing">
-                        <area>0,0,100%,100%</area>
-                        <!--<shape name="animation">
-                            <area>0,0,100%,100%</area>
-                            <fill color="#000000" alpha="0" />
-                            <line color="#0000FF" alpha="255" />
-                            <alphapulse min="80" max="255" change="2"/>
-                        </shape>-->
-                        <textarea name="playing">
-                            <area>870,15,100,35</area>
-                            <align>left,vcenter</align>
-                            <font>basesmalllightblue</font>
-                            <alpha>255</alpha>
-                            <value>Playing...</value>
-                            <!--<alphapulse min="80" max="255" change="2"/>-->
-                        </textarea>
-                    </state>
+                        <imagetype name="playicon">
+                            <position>5,20</position>
+                            <filename>mm_playicon.png</filename>
+                        </imagetype>
+					</state>
                     <state name="paused">
-                        <area>0,0,100%,100%</area>
-                        <!--<shape name="animation">
-                            <area>0,0,100%,100%</area>
-                            <fill color="#000000" alpha="0" />
-                            <line color="#FF0000" alpha="255" />
-                            <alphapulse min="80" max="255" change="2"/>
-                        </shape>-->
-                        <textarea name="paused">
-                            <area>870,15,100,35</area>
-                            <align>left,vcenter</align>
-                            <font>basesmalllightblue</font>
-                            <alpha>255</alpha>
-                            <value>Paused !</value>
-                        </textarea>
+                        <imagetype name="pauseicon">
+                            <position>5,20</position>
+                            <filename>mm_pauseicon.png</filename>
+                        </imagetype>
                     </state>
                     <state name="stopped">
-                        <imagetype name="animation">
-                            <position>870,20</position>
+                        <imagetype name="stopicon">
+                            <position>5,20</position>
                             <filename>mm_stopicon.png</filename>
                         </imagetype>
                     </state>
@@ -740,41 +719,20 @@
                 </textarea>
                 <statetype name="playstate">
                     <state name="playing">
-                        <area>0,0,100%,100%</area>
-                        <!--<shape name="animation">
-                            <area>0,0,100%,100%</area>
-                            <fill color="#000000" alpha="0" />
-                            <line color="#0000FF" alpha="255" />
-                            <alphapulse min="80" max="255" change="2"/>
-                        </shape>-->
-                        <textarea name="playing">
-                            <area>500,0,100,34</area>
-                            <align>left,vcenter</align>
-                            <font>basesmalllightblue</font>
-                            <alpha>255</alpha>
-                            <value>Playing...</value>
-                            <!--<alphapulse min="80" max="255" change="2"/>-->
-                        </textarea>
-                    </state>
+                        <imagetype name="playicon">
+                            <position>5,10</position>
+                            <filename>mm_playicon.png</filename>
+                        </imagetype>
+					</state>
                     <state name="paused">
-                        <area>0,0,100%,100%</area>
-                        <!--<shape name="animation">
-                            <area>0,0,100%,100%</area>
-                            <fill color="#000000" alpha="0" />
-                            <line color="#FF0000" alpha="255" />
-                            <alphapulse min="80" max="255" change="2"/>
-                        </shape>-->
-                        <textarea name="paused">
-                            <area>500,5,100,34</area>
-                            <align>left,vcenter</align>
-                            <font>basesmalllightred</font>
-                            <alpha>255</alpha>
-                            <value>Paused !</value>
-                        </textarea>
+                        <imagetype name="pauseicon">
+                            <position>5,10</position>
+                            <filename>mm_pauseicon.png</filename>
+                        </imagetype>
                     </state>
                     <state name="stopped">
-                        <imagetype name="animation">
-                            <position>500,20</position>
+                        <imagetype name="stopicon">
+                            <position>5,10</position>
                             <filename>mm_stopicon.png</filename>
                         </imagetype>
                     </state>
@@ -828,31 +786,20 @@
                 </textarea>
                 <statetype name="playstate">
                     <state name="playing">
-                        <area>0,0,100%,100%</area>
-                        <!--<shape name="animation">
-                            <area>0,-2,100%,100%</area>
-                            <fill color="#000000" alpha="0" />
-                            <line color="#0000FF" alpha="255" />
-                            <alphapulse min="80" max="255" change="2"/>
-                        </shape>-->
-                        <textarea name="playing">
-                            <area>700,20,100,35</area>
-                            <align>left,vcenter</align>
-                            <font>basesmalllightblue</font>
-                            <alpha>210</alpha>
-                            <value>Playing...</value>
-                            <!--<alphapulse min="80" max="255" change="2"/>-->
-                        </textarea>
-                    </state>
+                        <imagetype name="playicon">
+                            <position>5,10</position>
+                            <filename>mm_playicon.png</filename>
+                        </imagetype>
+					</state>
                     <state name="paused">
-                        <imagetype name="animation">
-                            <position>700,20</position>
+                        <imagetype name="pauseicon">
+                            <position>5,10</position>
                             <filename>mm_pauseicon.png</filename>
                         </imagetype>
                     </state>
                     <state name="stopped">
-                        <imagetype name="animation">
-                            <position>700,20</position>
+                        <imagetype name="stopicon">
+                            <position>5,10</position>
                             <filename>mm_stopicon.png</filename>
                         </imagetype>
                     </state>
