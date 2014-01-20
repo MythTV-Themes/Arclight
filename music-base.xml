@@ -329,7 +329,7 @@
             <value>Playlist:</value>
         </textarea>
         <textarea name="playlistname" from="basetextarea">
-            <area>130,0,400,35</area>
+            <area>130,0,500,35</area>
             <font>basesmall</font>
         </textarea>
         <textarea name="nexttitlelbl" from="basetextarea">
@@ -339,7 +339,7 @@
         </textarea>
         <textarea name="nexttitle" from="basetextarea">
             <font>basesmall</font>
-            <area>130,30,400,35</area>
+            <area>130,30,500,35</area>
             <template>%NEXTTITLE% by %NEXTARTIST%</template>
         </textarea>
         <textarea name="playlistposition" from="basetextarea">
@@ -638,7 +638,7 @@
             <position>230,240</position>
         </progressbar>
         <textarea name="time" from="basetextarea">
-            <area>230,205,185,35</area>
+            <area>230,205,285,35</area>
             <font>basesmall</font>
         </textarea>
         <statetype name="mutestate" from="basemutestate">
@@ -679,25 +679,25 @@
             </state>
         </statetype>
         <textarea name="title" from="basetextarea">
-            <area>120,0,500,35</area>
+            <area>130,0,500,35</area>
             <font>basesmall</font>
             <align>left,top</align>
-            <template>Now Playing: %TITLE%</template>
+            <template>%TITLE%</template>
         </textarea>
         <textarea name="artist" from="basetextarea">
-            <area>120,30,500,35</area>
+            <area>130,30,500,35</area>
             <font>basesmall</font>
             <align>left,top</align>
             <template>By %ARTIST%</template>
         </textarea>
         <textarea name="album" from="basetextarea">
-            <area>120,60,500,35</area>
+            <area>130,60,500,35</area>
             <font>basesmall</font>
             <align>left,top</align>
             <template>On %ALBUM%</template>
         </textarea>
         <textarea name="time" from="basetextarea">
-            <area>120,90,185,35</area>
+            <area>130,90,285,35</area>
             <align>left,top</align>
             <font>basesmall</font>
         </textarea>
@@ -785,7 +785,7 @@
                     <font>basesmall</font>
                 </textarea>
                 <textarea name="artist" from="buttontext">
-                    <area>700,0,280,35</area>
+                    <area>700,0,340,35</area>
                     <font>basesmall</font>
                     <align>left,vcenter</align>
                 </textarea>
