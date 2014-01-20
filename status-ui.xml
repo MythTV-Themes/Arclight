@@ -103,6 +103,7 @@
         </buttonlist>
 
         <buttonlist name="log" from="baseshapebuttonlistwide">
+            <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext">
