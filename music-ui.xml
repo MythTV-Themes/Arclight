@@ -184,9 +184,7 @@
             <position>650,667</position>
         </statetype>
 
-        <group name="playlistpanel" from="baseplaylistpanel">
-            <searchposition>700,450</searchposition>
-        </group>
+        <group name="playlistpanel" from="baseplaylistpanel"/>
 
         <group name="playliststatusgroup" from="baseplayliststatusgroup">
             <position>120,840</position>
@@ -275,9 +273,7 @@
             <position>650,700</position>
         </statetype>
 
-        <group name="playlistpanel" from="baseplaylistpanel">
-            <searchposition>700,850</searchposition>
-        </group>
+        <group name="playlistpanel" from="baseplaylistpanel"/>
 
         <group name="playliststatusgroup" from="baseplayliststatusgroup">
             <position>120,840</position>
@@ -680,9 +676,7 @@
             <position>650,700</position>
         </statetype>
 
-        <group name="playlistpanel" from="baseplaylistpanel">
-            <searchposition>700,850</searchposition>
-        </group>
+        <group name="playlistpanel" from="baseplaylistpanel"/>
 
         <group name="playliststatusgroup" from="baseplayliststatusgroup">
             <position>120,840</position>
