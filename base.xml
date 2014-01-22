@@ -13,8 +13,7 @@
         <color>#FFFFFF</color>
     </fontdef>
 
-    <fontdef name="basesmall" from="base">>
-        <pixelsize>25</pixelsize>
+    <fontdef name="basesmall" from="base">> <pixelsize>25</pixelsize>
     </fontdef>
 
     <!-- http://www.theleagueofmoveabletype.com/fonts/7-league-gothic -->
@@ -137,13 +136,13 @@
     <window name="windowslideup">
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
-<!--                <alpha start="120" end="255" easingcurve="Linear" reversible="false" looped="true" />-->
+                <!--                <alpha start="120" end="255" easingcurve="Linear" reversible="false" looped="true" />-->
                 <zoom start="0" end="100" easingcurve="OutCurve" duration="200"/>
             </section>
         </animation>
         <animation trigger="AboutToHide">
             <section duration="500" centre="middle">
-<!--                <alpha start="120" end="255" easingcurve="Linear" reversible="false" looped="true" />-->
+                <!--                <alpha start="120" end="255" easingcurve="Linear" reversible="false" looped="true" />-->
                 <zoom start="100" end="0" easingcurve="OutCurve" duration="200"/>
             </section>
         </animation>
@@ -177,16 +176,13 @@
                 <statetype name="buttoncheck">
                     <position>91%,10</position>
                     <state type="off">
-                        <imagetype name="checkoff">
-                        </imagetype>
+                        <imagetype name="checkoff"> </imagetype>
                     </state>
                     <state type="half">
-                        <imagetype name="checkhalf">
-                        </imagetype>
+                        <imagetype name="checkhalf"> </imagetype>
                     </state>
                     <state type="full">
-                        <imagetype name="checkfull">
-                        </imagetype>
+                        <imagetype name="checkfull"> </imagetype>
                     </state>
                 </statetype>
                 <imagetype name="buttonarrow">
@@ -256,7 +252,7 @@
                 <shape name="item">
                     <area>0,0,100%,88</area>
                     <type>box</type>
-                    <fill color="#000000" alpha="180" />
+                    <fill color="#000000" alpha="180"/>
                 </shape>
                 <imagetype name="coverart">
                     <area>6,2,50,85</area>
@@ -311,7 +307,7 @@
             </state>
             <state name="selectedactive" from="active">
                 <shape name="item">
-                    <fill color="#0767AB" alpha="240" />
+                    <fill color="#0767AB" alpha="240"/>
                 </shape>
                 <textarea name="title">
                     <alpha>200</alpha>
@@ -329,7 +325,7 @@
                     <alpha>200</alpha>
                 </textarea>
                 <imagetype name="divider">
-                    <filename />
+                    <filename/>
                 </imagetype>
                 <statetype name="nodetype">
                     <state name="subfolder">
@@ -348,12 +344,11 @@
                     </state>
                 </statetype>
             </state>
-            <state name="selectedinactive" from="active" />
+            <state name="selectedinactive" from="active"/>
         </statetype>
         <statetype name="upscrollarrow">
             <position>1075,-30</position>
-            <state type="off">
-            </state>
+            <state type="off"> </state>
             <state type="full">
                 <imagetype name="upon">
                     <filename>images/arclight_popup_uparrow.png</filename>
@@ -363,8 +358,7 @@
         </statetype>
         <statetype name="downscrollarrow">
             <position>1057,-30</position>
-            <state type="off">
-            </state>
+            <state type="off"> </state>
             <state type="full">
                 <imagetype name="dnon">
                     <filename>images/arclight_popup_downarrow.png</filename>
@@ -390,7 +384,7 @@
                 <shape name="item">
                     <area>0,0,100%,87</area>
                     <type>box</type>
-                    <fill color="#000000" alpha="180" />
+                    <fill color="#000000" alpha="180"/>
                 </shape>
                 <textarea name="buttontext">
                     <area>10,27,1130,40</area>
@@ -432,7 +426,7 @@
                             <value>New</value>
                         </textarea>
                     </state>
-                    <state name="yes" />
+                    <state name="yes"/>
                 </statetype>
                 <textarea name="timedate">
                     <area>659,10,465,40</area>
@@ -530,7 +524,7 @@
                 <area>0,0,100%,199</area>
                 <shape name="item">
                     <area>0,0,100%,197</area>
-                    <fill color="#0767AB" alpha="240" />
+                    <fill color="#0767AB" alpha="240"/>
                 </shape>
                 <textarea name="title">
                     <alpha>200</alpha>
@@ -558,7 +552,7 @@
                             <value>New</value>
                         </textarea>
                     </state>
-                    <state name="yes" />
+                    <state name="yes"/>
                 </statetype>
                 <textarea name="timedate">
                     <alpha>200</alpha>
@@ -619,7 +613,7 @@
                     <alpha>200</alpha>
                 </textarea>
                 <imagetype name="divider">
-                    <filename />
+                    <filename/>
                 </imagetype>
                 <imagetype name="buttonarrow">
                     <filename>images/reclist-arrow-black.png</filename>
@@ -630,7 +624,7 @@
                 <area>0,0,100%,199</area>
                 <shape name="item">
                     <area>0,0,100%,197</area>
-                    <fill color="#222222" alpha="190" />
+                    <fill color="#222222" alpha="190"/>
                 </shape>
                 <imagetype name="divider">
                     <area>0,196,1136,2</area>
@@ -706,8 +700,7 @@
         </statetype>
         <statetype name="upscrollarrow">
             <position>1075,-30</position>
-            <state type="off">
-            </state>
+            <state type="off"> </state>
             <state type="full">
                 <imagetype name="upon">
                     <filename>images/arclight_popup_uparrow.png</filename>
@@ -717,8 +710,7 @@
         </statetype>
         <statetype name="downscrollarrow">
             <position>1057,-30</position>
-            <state type="off">
-            </state>
+            <state type="off"> </state>
             <state type="full">
                 <imagetype name="dnon">
                     <filename>images/arclight_popup_downarrow.png</filename>
@@ -745,7 +737,7 @@
                 <shape name="item">
                     <area>0,0,100%,88</area>
                     <type>box</type>
-                    <fill color="#000000" alpha="180" />
+                    <fill color="#000000" alpha="180"/>
                 </shape>
                 <textarea name="buttontext">
                     <area>13,27,1130,40</area>
@@ -870,22 +862,20 @@
                     <alpha>210</alpha>
                 </imagetype>
                 <statetype name="buttoncheck">
-                    <state type="off">
-                    </state>
-                    <state type="half">
-                    </state>
+                    <state type="off"> </state>
+                    <state type="half"> </state>
                     <state type="full">
                         <shape name="plfill">
                             <type>box</type>
                             <area>3,3,6,82</area>
-                            <fill color="#0767AB" alpha="230" />
+                            <fill color="#0767AB" alpha="230"/>
                         </shape>
                     </state>
                 </statetype>
             </state>
             <state name="selectedactive" from="active">
                 <shape name="item">
-                    <fill color="#0767AB" alpha="240" />
+                    <fill color="#0767AB" alpha="240"/>
                 </shape>
                 <textarea name="title">
                     <alpha>200</alpha>
@@ -960,36 +950,33 @@
                     <alpha>200</alpha>
                 </textarea>
                 <imagetype name="divider">
-                    <filename />
+                    <filename/>
                 </imagetype>
                 <imagetype name="buttonarrow">
                     <filename>images/reclist-arrow-white.png</filename>
                     <alpha>200</alpha>
                 </imagetype>
                 <statetype name="buttoncheck">
-                    <state type="off">
-                    </state>
-                    <state type="half">
-                    </state>
+                    <state type="off"> </state>
+                    <state type="half"> </state>
                     <state type="full">
                         <shape name="plfill">
                             <type>box</type>
                             <area>3,3,6,82</area>
-                            <fill color="#FFFFFF" alpha="230" />
+                            <fill color="#FFFFFF" alpha="230"/>
                         </shape>
                     </state>
                 </statetype>
             </state>
             <state name="selectedinactive" from="active">
                 <shape name="item">
-                    <fill color="#222222" alpha="190" />
+                    <fill color="#222222" alpha="190"/>
                 </shape>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
             <position>1075,-30</position>
-            <state type="off">
-            </state>
+            <state type="off"> </state>
             <state type="full">
                 <imagetype name="upon">
                     <filename>images/arclight_popup_uparrow.png</filename>
@@ -999,8 +986,7 @@
         </statetype>
         <statetype name="downscrollarrow">
             <position>1057,-30</position>
-            <state type="off">
-            </state>
+            <state type="off"> </state>
             <state type="full">
                 <imagetype name="dnon">
                     <filename>images/arclight_popup_downarrow.png</filename>
@@ -1037,20 +1023,16 @@
                 <statetype name="buttoncheck">
                     <position>91%,10</position>
                     <state type="off">
-                        <imagetype name="checkoff">
-                        </imagetype>
+                        <imagetype name="checkoff"> </imagetype>
                     </state>
                     <state type="half">
-                        <imagetype name="checkhalf">
-                        </imagetype>
+                        <imagetype name="checkhalf"> </imagetype>
                     </state>
                     <state type="full">
-                        <imagetype name="checkfull">
-                        </imagetype>
+                        <imagetype name="checkfull"> </imagetype>
                     </state>
                 </statetype>
-                <imagetype name="buttonarrow">
-                </imagetype>
+                <imagetype name="buttonarrow"> </imagetype>
             </state>
             <state name="selectedactive" from="active">
                 <imagetype name="bulb">
@@ -1071,10 +1053,8 @@
                 </textarea>
             </state>
         </statetype>
-        <statetype name="upscrollarrow">
-        </statetype>
-        <statetype name="downscrollarrow">
-        </statetype>
+        <statetype name="upscrollarrow"> </statetype>
+        <statetype name="downscrollarrow"> </statetype>
     </buttonlist>
 
     <buttonlist name="baseshapebuttonlist">
@@ -1090,7 +1070,7 @@
                 <shape name="item">
                     <area>0,0,100%,49</area>
                     <type>box</type>
-                    <fill color="#000000" alpha="160" />
+                    <fill color="#000000" alpha="160"/>
                 </shape>
                 <textarea name="buttontext">
                     <area>5,9,757,40</area>
@@ -1105,24 +1085,20 @@
                 <statetype name="buttoncheck">
                     <position>91%,10</position>
                     <state type="off">
-                        <imagetype name="checkoff">
-                        </imagetype>
+                        <imagetype name="checkoff"> </imagetype>
                     </state>
                     <state type="half">
-                        <imagetype name="checkhalf">
-                        </imagetype>
+                        <imagetype name="checkhalf"> </imagetype>
                     </state>
                     <state type="full">
-                        <imagetype name="checkfull">
-                        </imagetype>
+                        <imagetype name="checkfull"> </imagetype>
                     </state>
                 </statetype>
-                <imagetype name="buttonarrow">
-                </imagetype>
+                <imagetype name="buttonarrow"> </imagetype>
             </state>
             <state name="selectedactive" from="active">
                 <shape name="item">
-                    <fill color="#0767AB" alpha="240" />
+                    <fill color="#0767AB" alpha="240"/>
                 </shape>
                 <textarea name="buttontext">
                     <alpha>255</alpha>
@@ -1130,7 +1106,7 @@
             </state>
             <state name="selectedinactive" from="active">
                 <shape name="item">
-                    <fill color="#222222" alpha="180" />
+                    <fill color="#222222" alpha="180"/>
                 </shape>
                 <textarea name="buttontext">
                     <alpha>200</alpha>
@@ -1183,7 +1159,7 @@
                 <shape name="item">
                     <area>0,0,100%,49</area>
                     <type>box</type>
-                    <fill color="#000000" alpha="160" />
+                    <fill color="#000000" alpha="160"/>
                 </shape>
                 <textarea name="buttontext">
                     <area>5,9,757,40</area>
@@ -1198,24 +1174,20 @@
                 <statetype name="buttoncheck">
                     <position>91%,10</position>
                     <state type="off">
-                        <imagetype name="checkoff">
-                        </imagetype>
+                        <imagetype name="checkoff"> </imagetype>
                     </state>
                     <state type="half">
-                        <imagetype name="checkhalf">
-                        </imagetype>
+                        <imagetype name="checkhalf"> </imagetype>
                     </state>
                     <state type="full">
-                        <imagetype name="checkfull">
-                        </imagetype>
+                        <imagetype name="checkfull"> </imagetype>
                     </state>
                 </statetype>
-                <imagetype name="buttonarrow">
-                </imagetype>
+                <imagetype name="buttonarrow"> </imagetype>
             </state>
             <state name="selectedactive" from="active">
                 <shape name="item">
-                    <fill color="#0767AB" alpha="240" />
+                    <fill color="#0767AB" alpha="240"/>
                 </shape>
                 <textarea name="buttontext">
                     <alpha>255</alpha>
@@ -1223,7 +1195,7 @@
             </state>
             <state name="selectedinactive" from="active">
                 <shape name="item">
-                    <fill color="#222222" alpha="180" />
+                    <fill color="#222222" alpha="180"/>
                 </shape>
                 <textarea name="buttontext">
                     <alpha>200</alpha>
@@ -1233,8 +1205,7 @@
         </statetype>
         <statetype name="upscrollarrow">
             <position>1075,-30</position>
-            <state type="off">
-            </state>
+            <state type="off"> </state>
             <state type="full">
                 <imagetype name="upon">
                     <filename>images/arclight_popup_uparrow.png</filename>
@@ -1244,8 +1215,7 @@
         </statetype>
         <statetype name="downscrollarrow">
             <position>1057,-30</position>
-            <state type="off">
-            </state>
+            <state type="off"> </state>
             <state type="full">
                 <imagetype name="dnon">
                     <filename>images/arclight_popup_downarrow.png</filename>
@@ -1280,9 +1250,8 @@
                     <alpha>255</alpha>
                 </textarea>
             </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="selected">
-            </state>
+            <state name="disabled" from="active"/>
+            <state name="pushed" from="selected"> </state>
         </statetype>
     </button>
 
@@ -1310,9 +1279,8 @@
                     <alpha>255</alpha>
                 </textarea>
             </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="selected">
-            </state>
+            <state name="disabled" from="active"/>
+            <state name="pushed" from="selected"> </state>
         </statetype>
     </button>
 
@@ -1340,9 +1308,8 @@
                     <alpha>255</alpha>
                 </textarea>
             </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="selected">
-            </state>
+            <state name="disabled" from="active"/>
+            <state name="pushed" from="selected"> </state>
         </statetype>
     </button>
 
@@ -1372,9 +1339,8 @@
                     <alpha>255</alpha>
                 </textarea>
             </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-            </state>
+            <state name="disabled" from="active"/>
+            <state name="pushed" from="active"> </state>
         </statetype>
     </button>
 
@@ -1399,11 +1365,11 @@
                     <filename>images/checkbox_unselected_unchecked.png</filename>
                 </imagetype>
             </state>
-            <state name="disabled" />
+            <state name="disabled"/>
         </statetype>
         <statetype name="checkstate">
             <area>0,0,45,45</area>
-            <state type="off" />
+            <state type="off"/>
             <state type="half">
                 <imagetype name="background">
                     <area>0,0,30,30</area>
@@ -1802,8 +1768,7 @@
 
     <statetype name="baserating">
         <area>0,0,178,30</area>
-        <state name="0">
-        </state>
+        <state name="0"> </state>
         <state name="1">
             <imagetype name="stars">
                 <area>0,0,178,30</area>
@@ -1977,16 +1942,13 @@
                     <statetype name="buttoncheck">
                         <position>91%,10</position>
                         <state type="off">
-                            <imagetype name="checkoff">
-                            </imagetype>
+                            <imagetype name="checkoff"> </imagetype>
                         </state>
                         <state type="half">
-                            <imagetype name="checkhalf">
-                            </imagetype>
+                            <imagetype name="checkhalf"> </imagetype>
                         </state>
                         <state type="full">
-                            <imagetype name="checkfull">
-                            </imagetype>
+                            <imagetype name="checkfull"> </imagetype>
                         </state>
                     </statetype>
                     <imagetype name="buttonarrow">
@@ -2273,19 +2235,19 @@
         <shape name="infobox">
             <area>35,13,694,913</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
 
         </shape>
 
         <imagetype name="preview">
             <area>165,23,450,296</area>
-            <filename />
+            <filename/>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="coverart">
             <area>515,23,200,296</area>
-            <filename />
+            <filename/>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -2314,10 +2276,16 @@
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
-        <clock name="clock">
+        <shape name="baseclock_bg">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200"/>
+        </shape>
+
+        <clock name="baseclock">
             <area>1620,-2,303,50</area>
             <font>basesmall</font>
             <align>allcenter</align>
@@ -2338,7 +2306,7 @@
                     <shape name="item">
                         <area>0,0,100%,89</area>
                         <type>box</type>
-                        <fill color="#000000" alpha="180" />
+                        <fill color="#000000" alpha="180"/>
                     </shape>
                     <imagetype name="buttonimage">
                         <area>6,3,130,83</area>
@@ -2373,19 +2341,17 @@
                         </state>
                         <state name="executable">
                             <area>6,2,50,85</area>
-                            <imagetype name="icon">
-                            </imagetype>
+                            <imagetype name="icon"> </imagetype>
                         </state>
                         <state name="file">
                             <area>6,2,50,85</area>
-                            <imagetype name="icon">
-                            </imagetype>
+                            <imagetype name="icon"> </imagetype>
                         </state>
                     </statetype>
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <fill color="#0767AB" alpha="240"/>
                     </shape>
                     <textarea name="buttontext">
                         <alpha>200</alpha>
@@ -2395,7 +2361,7 @@
                         <alpha>255</alpha>
                     </imagetype>
                     <imagetype name="divider">
-                        <filename />
+                        <filename/>
                     </imagetype>
                     <statetype name="nodetype">
                         <state name="folder">
@@ -2414,22 +2380,19 @@
                         </state>
                         <state name="executable">
                             <area>6,2,50,85</area>
-                            <imagetype name="icon">
-                            </imagetype>
+                            <imagetype name="icon"> </imagetype>
                         </state>
                         <state name="file">
                             <area>6,2,50,85</area>
-                            <imagetype name="icon">
-                            </imagetype>
+                            <imagetype name="icon"> </imagetype>
                         </state>
                     </statetype>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="active"/>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1075,-30</position>
-                <state type="off">
-                </state>
+                <state type="off"> </state>
                 <state type="full">
                     <imagetype name="upon">
                         <filename>images/arclight_popup_uparrow.png</filename>
@@ -2439,8 +2402,7 @@
             </statetype>
             <statetype name="downscrollarrow">
                 <position>1057,-30</position>
-                <state type="off">
-                </state>
+                <state type="off"> </state>
                 <state type="full">
                     <imagetype name="dnon">
                         <filename>images/arclight_popup_downarrow.png</filename>
@@ -2476,7 +2438,7 @@
 
     </window>
 
-<!-- #10761
+    <!-- #10761
     <window name="videowindow" from="windowslideup">
 -->
     <window name="videowindow">
@@ -2511,8 +2473,8 @@
         <shape name="shape">
             <area>784,0,1138,1080</area>
             <type>box</type>
-            <fill color="#000000" alpha="230" />
-            <line color="#000000" alpha="230" width="-1" />
+            <fill color="#000000" alpha="230"/>
+            <line color="#000000" alpha="230" width="-1"/>
         </shape>
 
         <buttonlist name="results" from="baseVBLwide">
@@ -2596,8 +2558,8 @@
         <shape name="shape">
             <area>784,0,1138,1080</area>
             <type>box</type>
-            <fill color="#000000" alpha="230" />
-            <line color="#000000" alpha="230" width="-1" />
+            <fill color="#000000" alpha="230"/>
+            <line color="#000000" alpha="230" width="-1"/>
         </shape>
 
         <buttonlist name="results" from="baseVBLwide">
