@@ -290,15 +290,15 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="episode">
+        <textarea name="##x##" from="basetextarea">
             <area>500,880,1100,32</area>
             <multiline>no</multiline>
             <font>basegothicmid</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <template>Season %SEASON%, Episode %EPISODE%</template>
+            <template>Season/Episode: %1</template>
         </textarea>
-
+		
         <textarea name="description">
             <area>500,920,1100,150</area>
             <multiline>yes</multiline>
@@ -681,7 +681,7 @@
     </window>
 
     <window name="osd_status">
-        <area>1238,892,629,156</area>
+        <area>1280,910,629,156</area>
 
         <fontdef name="basenormal" face="CartoGothic Std">
             <color>#FFFFFF</color>
