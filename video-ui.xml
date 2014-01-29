@@ -161,31 +161,31 @@
         </clock>
 
         <shape name="infobox">
-            <area>35,13,694,1033</area>
+            <area>20,13,719,-26</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
         </shape>
 
         <imagetype name="screenshot">
-            <area>265,23,450,296</area>
+            <area>250,23,450,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="coverart">
-            <area>45,23,200,296</area>
+            <area>30,23,200,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>45,334,674,60</area>
+            <area>30,334,699,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>45,385,674,57</area>
+            <area>30,385,699,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
@@ -193,7 +193,7 @@
         </textarea>
 
         <textarea name="##x##" from="basetextarea">
-            <area>45,425,674,57</area>
+            <area>30,425,699,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -202,7 +202,7 @@
         </textarea>
 
         <textarea name="tagline" from="basetextarea">
-            <area>45,460,674,57</area>
+            <area>30,460,699,57</area>
             <multiline>no</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -210,7 +210,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,380</area>
+            <area>30,510,699,400</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -218,7 +218,7 @@
         </textarea>
 
         <textarea name="cast" from="description">
-            <area>45,935,674,90</area>
+            <area>30,935,699,90</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <align>justify</align>
@@ -307,6 +307,7 @@
                         <align>right,vcenter</align>
                         <font>basesmall</font>
                         <alpha>210</alpha>
+                        <cutdown>left</cutdown>
                     </textarea>
                     <imagetype name="divider">
                         <area>0,88,1136,2</area>
@@ -372,6 +373,7 @@
                     </textarea>
                     <textarea name="filename">
                         <alpha>200</alpha>
+                        <cutdown>left</cutdown>
                     </textarea>
                     <imagetype name="divider">
                         <filename />
@@ -453,31 +455,31 @@
         </clock>
 
         <shape name="infobox">
-            <area>35,13,694,1033</area>
+            <area>20,13,719,-26</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
         </shape>
 
         <imagetype name="screenshot">
-            <area>265,23,450,296</area>
+            <area>250,23,450,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="coverart">
-            <area>45,23,200,296</area>
+            <area>30,23,200,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>45,334,674,60</area>
+            <area>30,334,699,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>45,385,674,57</area>
+            <area>30,385,699,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
@@ -485,7 +487,7 @@
         </textarea>
 
         <textarea name="##x##" from="basetextarea">
-            <area>45,425,674,57</area>
+            <area>30,425,699,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -494,7 +496,7 @@
         </textarea>
 
         <textarea name="tagline" from="basetextarea">
-            <area>45,460,674,57</area>
+            <area>30,460,699,57</area>
             <multiline>no</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -502,7 +504,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,380</area>
+            <area>30,510,699,400</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -510,7 +512,7 @@
         </textarea>
 
         <textarea name="cast" from="description">
-            <area>45,935,674,90</area>
+            <area>30,935,699,90</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <align>justify</align>
@@ -521,7 +523,7 @@
         <shape name="backplane">
             <area>786,732,1136,350</area>
             <type>box</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#333333" alpha="200" />
             <line color="#000000" alpha="200" width="0" />
         </shape>
 
@@ -538,7 +540,7 @@
                     <imagetype name="buttonimage">
                         <area>0,0,186,225</area>
                         <filename />
-                        <alpha>70</alpha>
+                        <alpha>120</alpha>
                         <reflection axis="vertical" scale="65" length="35" />
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
@@ -546,7 +548,7 @@
                         <position>10,15</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <alpha>70</alpha>
+                                <alpha>120</alpha>
                                 <area>50,90,53,40</area>
                                 <filename>images/folderclosed.png</filename>
                                 <preserveaspect>yes</preserveaspect>
@@ -554,7 +556,7 @@
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <alpha>70</alpha>
+                                <alpha>120</alpha>
                                 <area>50,90,53,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
@@ -631,32 +633,31 @@
         </clock>
 
         <shape name="infobox">
-            <area>35,13,694,1033</area>
+            <area>20,13,719,-26</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <imagetype name="screenshot">
-            <area>265,23,450,296</area>
+            <area>250,23,450,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="coverart">
-            <area>45,23,200,296</area>
+            <area>30,23,200,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>45,334,674,60</area>
+            <area>30,334,699,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>45,385,674,57</area>
+            <area>30,385,699,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
@@ -664,7 +665,7 @@
         </textarea>
 
         <textarea name="##x##" from="basetextarea">
-            <area>45,425,674,57</area>
+            <area>30,425,699,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -673,7 +674,7 @@
         </textarea>
 
         <textarea name="tagline" from="basetextarea">
-            <area>45,460,674,57</area>
+            <area>30,460,699,57</area>
             <multiline>no</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -681,7 +682,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,380</area>
+            <area>30,510,699,400</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -689,7 +690,7 @@
         </textarea>
 
         <textarea name="cast" from="description">
-            <area>45,935,674,90</area>
+            <area>30,935,699,90</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <align>justify</align>
@@ -733,31 +734,31 @@
         </clock>
 
         <shape name="infobox">
-            <area>35,13,694,1033</area>
+            <area>20,13,719,-26</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
         </shape>
 
         <imagetype name="screenshot">
-            <area>265,23,450,296</area>
+            <area>250,23,450,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="coverart">
-            <area>45,23,200,296</area>
+            <area>30,23,200,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>45,334,674,60</area>
+            <area>30,334,699,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>45,385,674,57</area>
+            <area>30,385,699,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
@@ -765,7 +766,7 @@
         </textarea>
 
         <textarea name="##x##" from="basetextarea">
-            <area>45,425,674,57</area>
+            <area>30,425,699,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -774,7 +775,7 @@
         </textarea>
 
         <textarea name="tagline" from="basetextarea">
-            <area>45,460,674,57</area>
+            <area>30,460,699,57</area>
             <multiline>no</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -782,7 +783,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,380</area>
+            <area>30,510,699,400</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -790,7 +791,7 @@
         </textarea>
 
         <textarea name="cast" from="description">
-            <area>45,935,674,90</area>
+            <area>30,935,699,90</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <align>justify</align>
@@ -1403,32 +1404,32 @@
             <fill color="#000000" alpha="80" />
         </shape>
 
-        <shape name="infobox">
-            <area>35,13,694,1033</area>
+         <shape name="infobox">
+            <area>20,13,719,-26</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
         </shape>
 
         <imagetype name="screenshot">
-            <area>265,23,450,296</area>
+            <area>250,23,450,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="coverart">
-            <area>45,23,200,296</area>
+            <area>30,23,200,296</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>45,334,674,60</area>
+            <area>30,334,699,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>45,385,674,57</area>
+            <area>30,385,699,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
@@ -1436,7 +1437,7 @@
         </textarea>
 
         <textarea name="##x##" from="basetextarea">
-            <area>45,425,674,57</area>
+            <area>30,425,699,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -1445,7 +1446,7 @@
         </textarea>
 
         <textarea name="director" from="basetextarea">
-            <area>45,460,674,57</area>
+            <area>30,460,699,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -1454,7 +1455,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,375</area>
+            <area>30,510,699,400</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -1462,7 +1463,7 @@
         </textarea>
 
         <textarea name="releasedate" from="basetextarea">
-            <area>45,885,674,57</area>
+            <area>30,890,699,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -1471,7 +1472,7 @@
         </textarea>
 
         <textarea name="insertdate" from="basetextarea">
-            <area>45,920,674,57</area>
+            <area>30,925,699,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -1486,7 +1487,7 @@
 
         <button name="play_button" from="basebutton">
             <value>Play</value>
-            <position>500,985</position>
+            <position>450,985</position>
         </button>
 
     </window>
