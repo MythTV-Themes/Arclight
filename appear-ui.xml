@@ -3,57 +3,62 @@
 <mythuitheme>
     <window name="appearance">
 
-        <imagetype name="background">
-            <area>0,0,1920,1080</area>
-            <filename>Backgrounds/</filename>
-        </imagetype>
-
-        <shape name="item">
-            <area>100,60,1760,960</area>
+        <shape name="blackout">
             <type>box</type>
-            <fill color="#1d1d1d" alpha="230" />
-            <line color="#1d1d1d" alpha="240" width="1" />
+            <fill style="solid" color="yellow"/>
         </shape>
 
-        <textarea name="part" from="basetextarea">
+        <imagetype name="preview">
+            <filename>preview.png</filename>
+            <preserveaspect>false</preserveaspect>
+        </imagetype>
+
+        <imagetype name="backimg">
+            <area>600,100,790,962</area>
+            <filename>images/arclight_popup_large_bg.png</filename>
+        </imagetype>
+
+        <textarea name="header" from="basetextarea">
             <font>basegothiclarge</font>
-            <area>300,230,1320,60</area>
+            <area>710,230,570,60</area>
             <value>Appearance Wizard</value>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="part1" from="basetextarea">
+        <textarea name="help1" from="basetextarea">
             <font>basegothicmidblue</font>
-            <area>300,300,1320,470</area>
-            <value>Move the selected arrow to the corner of the TV screen.  Press SELECT to edit the other arrow.  Press MENU to change the granularity of the adjustment or to quit without saving.  When you have finished, press BACK.</value>
+            <area>710,310,570,100</area>
+            <value>Move the selected corner of the preview image to the corner of the TV screen.</value>
             <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="help2" from="help1">
+            <font>basegothicmidblue</font>
+            <area>710,410,570,50</area>
+            <value>Press SELECT to edit the other corner.</value>
+        </textarea>
+
+        <textarea name="help3" from="help1">
+            <font>basegothicmidblue</font>
+            <area>710,460,570,50</area>
+            <value>Press MENU for options and ESC to quit.</value>
         </textarea>
 
         <textarea name="size" from="basetextarea">
             <font>basemedium</font>
-            <area>300,450,1320,140</area>
+            <area>710,660,570,50</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="offsets" from="size">
-            <area>300,550,1320,140</area>
+            <area>710,730,570,50</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="changeamount" from="size">
-            <area>300,650,1320,140</area>
+            <area>710,870,570,50</area>
             <align>allcenter</align>
         </textarea>
-
-        <imagetype name="topleft">
-            <position>0,0</position>
-            <filename>topleft.png</filename>
-        </imagetype>
-
-        <imagetype name="bottomright">
-            <position>800,600</position>
-            <filename>bottomright.png</filename>
-        </imagetype>
 
     </window>
 </mythuitheme>
