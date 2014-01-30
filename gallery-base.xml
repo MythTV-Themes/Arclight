@@ -63,13 +63,13 @@
                     </state>
                 </statetype>
 
-                <group name="metadata" from="basefilemetadata"/>
-
                 <textarea name="childcount" from="basetextarea">
                     <area>100%-103,13,80,80</area>
                     <font>basesmall</font>
                     <align>right,vcenter</align>
                 </textarea>
+
+                <group name="metadata" from="basefilemetadata" depends="childcount"/>
 
                 <statetype name="buttoncheck">
                     <position>15,15</position>
