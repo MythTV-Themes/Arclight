@@ -419,7 +419,7 @@
                 <statetype name="watched">
                     <state name="no">
                         <textarea name="uhuh">
-                            <area>604,10,50,40</area>
+                            <area>604,10,55,40</area>
                             <align>allcenter</align>
                             <font>basesmalllightgreen</font>
                             <alpha>150</alpha>
@@ -545,7 +545,7 @@
                 <statetype name="watched">
                     <state name="no">
                         <textarea name="uhuh">
-                            <area>604,10,50,40</area>
+                            <area>604,10,55,40</area>
                             <align>allcenter</align>
                             <font>basesmall</font>
                             <alpha>210</alpha>
