@@ -17,13 +17,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -36,7 +36,7 @@
         <shape name="infobox">
             <area>35,13,524,721</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <imagetype name="channelicon">
@@ -90,22 +90,22 @@
             <timeslots>4</timeslots>
             <solidcolor>#000000</solidcolor>
             <categoryalpha>180</categoryalpha>
-            <selector type="box" linecolor="#0767AB" fillcolor="#0767AB" ></selector>
+            <selector type="box" linecolor="#0767AB" fillcolor="#0767AB"/>
             <showcategories>no</showcategories>
             <recordingcolor>#00aa00</recordingcolor>
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
             <textoffset>9,9</textoffset>
-            <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
-            <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
-            <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
-            <recordstatus type="AllRecord" image="images/gg-rs-all.png"></recordstatus>
-            <recordstatus type="WeekslotRecord" image="images/gg-rs-weekslot.png"></recordstatus>
-            <recordstatus type="FindOneRecord" image="images/gg-rs-findone.png"></recordstatus>
-            <recordstatus type="OverrideRecord" image="images/gg-rs-override.png"></recordstatus>
-            <arrow direction="left" image="images/reclist-arrow-white-left.png"></arrow>
-            <arrow direction="right" image="images/reclist-arrow-white.png"></arrow>
+            <recordstatus type="SingleRecord" image="images/gg-rs-single.png"/>
+            <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"/>
+            <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"/>
+            <recordstatus type="AllRecord" image="images/gg-rs-all.png"/>
+            <recordstatus type="WeekslotRecord" image="images/gg-rs-weekslot.png"/>
+            <recordstatus type="FindOneRecord" image="images/gg-rs-findone.png"/>
+            <recordstatus type="OverrideRecord" image="images/gg-rs-override.png"/>
+            <arrow direction="left" image="images/reclist-arrow-white-left.png"/>
+            <arrow direction="right" image="images/reclist-arrow-white.png"/>
             <font>basesmall</font>
         </guidegrid>
 
@@ -113,7 +113,7 @@
             <area>790,50,120,50</area>
             <align>left,vcenter</align>
         </textarea>
-			
+
         <buttonlist name="timelist">
             <area>813,50,1001,990</area>
             <layout>horizontal</layout>
@@ -134,24 +134,24 @@
             <statetype name="downscrollarrow">
                 <state type="off">
                     <imagetype name="dnon">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="dnoff">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <state type="off">
                     <imagetype name="upon">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="upoff">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
             </statetype>
@@ -168,12 +168,12 @@
                     <shape name="textback">
                         <area>0,1,180,88</area>
                         <type>roundbox</type>
-                        <fill color="#FFFFFF" alpha="60" />
+                        <fill color="#FFFFFF" alpha="60"/>
                     </shape>
                     <shape name="channelback">
                         <area>205,0,150,88</area>
                         <type>box</type>
-                        <fill color="#FFFFFF" alpha="100" />
+                        <fill color="#FFFFFF" alpha="100"/>
                         <cornerradius>12</cornerradius>
                     </shape>
                     <imagetype name="channelicon">
@@ -181,7 +181,7 @@
                         <preserveaspect>true</preserveaspect>
                         <alpha>200</alpha>
                     </imagetype>
-<!-- 25.11
+                    <!-- 25.11
                    <textarea name="buttontext" from="basetextarea">
                         <area>0,2,180,88</area>
                         <align>allcenter</align>
@@ -202,24 +202,24 @@
             <statetype name="downscrollarrow">
                 <state type="off">
                     <imagetype name="dnon">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="dnoff">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <state type="off">
                     <imagetype name="upon">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="upoff">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
             </statetype>
@@ -242,13 +242,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -261,7 +261,7 @@
         <shape name="infobox">
             <area>35,18,694,500</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -314,22 +314,22 @@
             <timeslots>4</timeslots>
             <solidcolor>#000000</solidcolor>
             <categoryalpha>180</categoryalpha>
-            <selector type="box" linecolor="#0767AB" fillcolor="#0767AB" ></selector>
+            <selector type="box" linecolor="#0767AB" fillcolor="#0767AB"/>
             <showcategories>no</showcategories>
             <recordingcolor>#00aa00</recordingcolor>
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
             <textoffset>9,9</textoffset>
-            <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
-            <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
-            <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
-            <recordstatus type="AllRecord" image="images/gg-rs-all.png"></recordstatus>
-            <recordstatus type="WeekslotRecord" image="images/gg-rs-weekslot.png"></recordstatus>
-            <recordstatus type="FindOneRecord" image="images/gg-rs-findone.png"></recordstatus>
-            <recordstatus type="OverrideRecord" image="images/gg-rs-override.png"></recordstatus>
-            <arrow direction="left" image="images/reclist-arrow-white-left.png"></arrow>
-            <arrow direction="right" image="images/reclist-arrow-white.png"></arrow>
+            <recordstatus type="SingleRecord" image="images/gg-rs-single.png"/>
+            <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"/>
+            <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"/>
+            <recordstatus type="AllRecord" image="images/gg-rs-all.png"/>
+            <recordstatus type="WeekslotRecord" image="images/gg-rs-weekslot.png"/>
+            <recordstatus type="FindOneRecord" image="images/gg-rs-findone.png"/>
+            <recordstatus type="OverrideRecord" image="images/gg-rs-override.png"/>
+            <arrow direction="left" image="images/reclist-arrow-white-left.png"/>
+            <arrow direction="right" image="images/reclist-arrow-white.png"/>
             <font>basesmall</font>
         </guidegrid>
 
@@ -337,7 +337,7 @@
             <area>790,495,120,50</area>
             <align>left,vcenter</align>
         </textarea>
-			
+
         <buttonlist name="timelist">
             <area>813,495,1001,445</area>
             <layout>horizontal</layout>
@@ -358,24 +358,24 @@
             <statetype name="downscrollarrow">
                 <state type="off">
                     <imagetype name="dnon">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="dnoff">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <state type="off">
                     <imagetype name="upon">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="upoff">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
             </statetype>
@@ -392,12 +392,12 @@
                     <shape name="textback">
                         <area>0,1,180,88</area>
                         <type>roundbox</type>
-                        <fill color="#FFFFFF" alpha="60" />
+                        <fill color="#FFFFFF" alpha="60"/>
                     </shape>
                     <shape name="channelback">
                         <area>205,0,150,88</area>
                         <type>box</type>
-                        <fill color="#FFFFFF" alpha="100" />
+                        <fill color="#FFFFFF" alpha="100"/>
                         <cornerradius>12</cornerradius>
                     </shape>
                     <imagetype name="channelicon">
@@ -417,24 +417,24 @@
             <statetype name="downscrollarrow">
                 <state type="off">
                     <imagetype name="dnon">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="dnoff">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <state type="off">
                     <imagetype name="upon">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="upoff">
-                        <filename></filename>
+                        <filename/>
                     </imagetype>
                 </state>
             </statetype>
@@ -462,7 +462,7 @@
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>allcenter</align>
-            <value>To manually schedule a recording, enter a title (optional).  Then set the channel, date, start time, and duration of your recording.  Note that this recording will not have any listings data or other information provided by an EPG.</value>
+            <value>To manually schedule a recording, enter a title (optional). Then set the channel, date, start time, and duration of your recording. Note that this recording will not have any listings data or other information provided by an EPG.</value>
         </textarea>
 
         <textarea name="title_text" from="basetextarea">
@@ -554,13 +554,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -573,7 +573,7 @@
         <shape name="infobox">
             <area>35,18,694,600</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -670,38 +670,38 @@
                         <state name="disabled">
                             <shape name="statusimage">
                                 <area>1,1,14,48</area>
-                                <fill color="#9e9e9e" />
+                                <fill color="#9e9e9e"/>
                             </shape>
                         </state>
                         <state name="error" from="disabled">
                             <shape name="statusimage">
                                 <area>1,1,14,48</area>
-                                <fill color="#e43e3e" />
+                                <fill color="#e43e3e"/>
                             </shape>
                         </state>
                         <state name="warning" from="disabled">
                             <shape name="statusimage">
                                 <area>1,1,14,48</area>
-                                <fill color="#ff9147" />
+                                <fill color="#ff9147"/>
                             </shape>
                         </state>
                         <state name="normal" from="disabled">
                             <shape name="statusimage">
                                 <area>1,1,14,48</area>
-                                <fill color="#066aff" />
+                                <fill color="#066aff"/>
                             </shape>
                         </state>
                         <state name="running" from="disabled">
                             <shape name="statusimage">
                                 <area>1,1,14,48</area>
-                                <fill color="#33bf33" />
+                                <fill color="#33bf33"/>
                             </shape>
                         </state>
                     </statetype>
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <fill color="#0767AB" alpha="240"/>
                     </shape>
                     <textarea name="shortstarttimedate">
                         <font>basesmall</font>
@@ -722,7 +722,7 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="item">
-                        <fill color="#222222" alpha="180" />
+                        <fill color="#222222" alpha="180"/>
                     </shape>
                     <textarea name="buttontext">
                         <alpha>200</alpha>
@@ -749,13 +749,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -768,12 +768,12 @@
         <shape name="infobox">
             <area>35,213,694,651</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <imagetype name="icon">
             <area>165,223,450,296</area>
-            <filename />
+            <filename/>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -813,7 +813,7 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <fill color="#0767AB" alpha="240"/>
                     </shape>
                     <textarea name="callsign">
                         <font>basesmall</font>
@@ -834,7 +834,7 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="item">
-                        <fill color="#222222" alpha="180" />
+                        <fill color="#222222" alpha="180"/>
                     </shape>
                     <textarea name="buttontext">
                         <alpha>200</alpha>
@@ -868,7 +868,7 @@
             <font>basesmall</font>
             <align>justify,vcenter</align>
             <cutdown>yes</cutdown>
-            <value>To give greater or lesser priority to a channel in your lineup, select it from the list.  To increase the channel's priority, press the right arrow.  To decrease its priority, press the left arrow.</value>
+            <value>To give greater or lesser priority to a channel in your lineup, select it from the list. To increase the channel's priority, press the right arrow. To decrease its priority, press the left arrow.</value>
         </textarea>
 
     </window>
@@ -888,13 +888,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -907,7 +907,7 @@
         <shape name="infobox">
             <area>35,18,694,930</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -969,7 +969,7 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <fill color="#0767AB" alpha="240"/>
                     </shape>
                     <textarea name="rectype">
                         <font>basesmall</font>
@@ -990,7 +990,7 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="item">
-                        <fill color="#222222" alpha="180" />
+                        <fill color="#222222" alpha="180"/>
                     </shape>
                     <textarea name="buttontext">
                         <alpha>200</alpha>
@@ -1090,7 +1090,7 @@
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>allcenter</align>
-            <value>To create a custom priority rule, enter a name and priority adjustment.  You can them select from existing priority templates or create one of your own using SQL syntax in the "Clause SQL" edit box.\n\nOnce you have completed your rule, can can Test, Delete, or Install it right away.</value>
+            <value>To create a custom priority rule, enter a name and priority adjustment. You can them select from existing priority templates or create one of your own using SQL syntax in the "Clause SQL" edit box.\n\nOnce you have completed your rule, can can Test, Delete, or Install it right away.</value>
         </textarea>
 
         <textarea name="title_text" from="basetextarea">
@@ -1310,7 +1310,7 @@
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>allcenter</align>
-            <value>You can specify basic criteria to create powerful search and record rules.  Below, you may enter title, subtitle, and description phrases (all optional), as well as category, genre, and channel values to refine a complex search for programs.\n\nWhen you have completed your configuration, press "OK" to search.</value>
+            <value>You can specify basic criteria to create powerful search and record rules. Below, you may enter title, subtitle, and description phrases (all optional), as well as category, genre, and channel values to refine a complex search for programs.\n\nWhen you have completed your configuration, press "OK" to search.</value>
         </textarea>
 
         <textarea name="title_text" from="basetextarea">
@@ -1397,13 +1397,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -1416,7 +1416,7 @@
         <shape name="infobox">
             <area>35,18,694,620</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1499,7 +1499,7 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <fill color="#0767AB" alpha="240"/>
                     </shape>
                     <textarea name="shortstarttimedate">
                         <font>basesmall</font>
@@ -1520,7 +1520,7 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="item">
-                        <fill color="#222222" alpha="180" />
+                        <fill color="#222222" alpha="180"/>
                     </shape>
                     <textarea name="buttontext">
                         <alpha>200</alpha>
@@ -1552,7 +1552,7 @@
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>allcenter</align>
-            <value>Below you will find the program details of the selected item.  There are two available screens.  You can toggle between them by pressing INFO.</value>
+            <value>Below you will find the program details of the selected item. There are two available screens. You can toggle between them by pressing INFO.</value>
         </textarea>
 
         <webbrowser name="browser">
@@ -1578,13 +1578,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -1597,7 +1597,7 @@
         <shape name="infobox">
             <area>35,18,694,600</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1669,7 +1669,7 @@
                     <shape name="item">
                         <area>0,0,100%,88</area>
                         <type>box</type>
-                        <fill color="#000000" alpha="180" />
+                        <fill color="#000000" alpha="180"/>
                     </shape>
                     <textarea name="title">
                         <area>13,10,653,40</area>
@@ -1715,22 +1715,20 @@
                         <alpha>210</alpha>
                     </imagetype>
                     <statetype name="buttoncheck">
-                        <state type="off">
-                        </state>
-                        <state type="half">
-                        </state>
+                        <state type="off"> </state>
+                        <state type="half"> </state>
                         <state type="full">
                             <shape name="plfill">
                                 <type>box</type>
                                 <area>3,3,6,82</area>
-                                <fill color="#0767AB" alpha="230" />
+                                <fill color="#0767AB" alpha="230"/>
                             </shape>
                         </state>
                     </statetype>
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <fill color="#0767AB" alpha="240"/>
                     </shape>
                     <textarea name="title">
                         <alpha>200</alpha>
@@ -1750,15 +1748,14 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="item">
-                        <fill color="#222222" alpha="190" />
+                        <fill color="#222222" alpha="190"/>
                     </shape>
                 </state>
             </statetype>
 
         </buttonlist>
 
-        <textarea name="help1text" from="title">
-        </textarea>
+        <textarea name="help1text" from="title"> </textarea>
 
         <textarea name="help2text" from="description">
             <multiline>yes</multiline>
@@ -1766,7 +1763,7 @@
 
         <textarea name="search" from="basetextarea">
             <area>370,350,300,30</area>
-            <value></value>
+            <value/>
         </textarea>
 
     </window>
@@ -1786,13 +1783,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="infobox">
             <area>35,18,694,1033</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1843,39 +1840,45 @@
         </buttonlist>
 
         <button name="schedoptions" from="basebuttonwide">
-            <position>132,703</position>
+            <position>132,661</position>
             <value>Schedule Options</value>
-            <helptext></helptext>
+            <helptext/>
+        </button>
+
+        <button name="filters" from="basebuttonwide">
+            <position>132,703</position>
+            <value>Filter Options</value>
+            <helptext/>
         </button>
 
         <button name="storeoptions" from="basebuttonwide">
             <position>132,745</position>
             <value>Storage Options</value>
-            <helptext></helptext>
+            <helptext/>
         </button>
 
         <button name="postprocessing" from="basebuttonwide">
             <position>132,787</position>
             <value>Post Processing</value>
-            <helptext></helptext>
+            <helptext/>
         </button>
 
         <button name="schedinfo" from="basebuttonwide">
             <position>132,829</position>
             <value>Schedule Info</value>
-            <helptext></helptext>
+            <helptext/>
         </button>
 
         <button name="preview" from="basebuttonwide">
             <position>132,871</position>
             <value>Preview Schedule</value>
-            <helptext></helptext>
+            <helptext/>
         </button>
 
         <button name="metadata" from="basebuttonwide">
             <position>132,913</position>
             <value>Metadata Options</value>
-            <helptext></helptext>
+            <helptext/>
         </button>
 
         <button name="cancel" from="basebutton">
@@ -1890,140 +1893,11 @@
 
     </window>
 
-    <window name="schedulefiltereditor">
-
-        <imagetype name="fanart">
-            <area>0,0,1920,1080</area>
-            <filename>Backgrounds/</filename>
-        </imagetype>
-
-        <imagetype name="leftpanel_bg">
-            <position>-20,0</position>
-            <filename>images/editmetadata_leftpanel_bg.png</filename>
-        </imagetype>
-
-        <shape name="panel_dark">
-            <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
-        </shape>
-
-        <shape name="infobox">
-            <area>35,18,694,1033</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
-        </shape>
-
-        <textarea name="title" from="basetextarea">
-            <area>45,33,674,60</area>
-            <font>basegothicmedium</font>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="subtitle" from="basetextarea">
-            <area>45,84,674,57</area>
-            <multiline>yes</multiline>
-            <font>basegothicmidblue</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-        </textarea>
-
-        <textarea name="channel" from="basetextarea">
-            <area>45,125,674,57</area>
-            <multiline>yes</multiline>
-            <font>basesmalllightblue</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-        </textarea>
-
-        <textarea name="timedate" from="basetextarea">
-            <area>45,160,674,57</area>
-            <multiline>yes</multiline>
-            <font>basesmalllightblue</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>45,210,674,345</area>
-            <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>left,top</align>
-            <cutdown>yes</cutdown>
-        </textarea>
-
-        <buttonlist name="filters" from="baseshapebuttonlist">
-            <area>5,470,674,328</area>
-            <layout>vertical</layout>
-            <spacing>0</spacing>
-            <scrollstyle>free</scrollstyle>
-            <wrapstyle>items</wrapstyle>
-            <buttonarea>0,0,100%,97%</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-            	    <area>0,0,100%,50</area>
-	    	    <textarea name="buttontext">
-	        	<area>40,10,-5,30</area>
-	    	    </textarea>
-   	    	    <statetype name="buttoncheck">
-        		<position>35,10</position>
-	        	<state type="off">
-	            	    <imagetype name="checkoff">
-	                	<filename>images/checkbox_unselected_unchecked.png</filename>
-	            	    </imagetype>
-	        	</state>
-	        	<state type="half">
-	            	    <imagetype name="checkhalf">
-	                	<filename>images/checkbox_selected_unchecked.png</filename>
-                    	    </imagetype>
-	        	</state>
-	        	<state type="full">
-	            	    <imagetype name="checkfull">
-	                	<filename>images/checkbox_unselected_checked.png</filename>
-	            	    </imagetype>
-	        	</state>
-	    	    </statetype>
-	    	    <imagetype name="divider">
-                	<area>60,48,674,2</area>
-                	<filename>images/arclight_wide_divider.png</filename>
-            	    </imagetype>
-		</state>
-        	<state name="selectedactive" from="active">
-            	    <shape name="item">
-                	<fill color="#0767AB" alpha="240" />
-            	    </shape>
-            	    <textarea name="buttontext">
-                	<alpha>255</alpha>
-            	    </textarea>
-        	</state>
-        	<state name="selectedinactive" from="active">
-            	    <shape name="item">
-                	<fill color="#222222" alpha="180" />
-            	    </shape>
-            	    <textarea name="buttontext">
-                	<alpha>200</alpha>
-                	<font>basesmall</font>
-            	    </textarea>
-        	</state>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>650,5</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>650,305</position>
-            </statetype>
-	</buttonlist>
-        <button name="back" from="basebutton">
-            <position>110,900</position>
-            <value>Back</value>
-        </button>
-
-    </window>
-
     <window name="scheduleoptionseditor">
         <area>-1,-1,1920,1079</area>
 
         <imagetype name="fanart">
-            <filename />
+            <filename/>
         </imagetype>
 
         <imagetype name="rightpanel_bg">
@@ -2033,7 +1907,7 @@
 
         <shape name="rightpanel_dark">
             <area>1238,0,682,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <textarea name="tit" from="basetextarea">
@@ -2052,14 +1926,8 @@
             <value>Select the options for this recording.</value>
         </textarea>
 
-        <button name="filters" from="basebutton">
-            <position>1320,380</position>
-            <value>Filters</value>
-            <helptext></helptext>
-        </button>
-
         <textarea name="priority_label" from="basetextarea">
-            <area>1140,492,250,30</area>
+            <area>1140,392,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>Priority:</value>
@@ -2067,79 +1935,79 @@
 
 
         <spinbox name="priority" from="basewidespinbox">
-            <position>1396,484</position>
+            <position>1396,384</position>
             <template type="negative">-%n</template>
             <template type="zero">Normal</template>
             <template type="positive">+%n</template>
         </spinbox>
 
         <textarea name="input_label" from="basetextarea">
-            <area>1140,552,250,30</area>
+            <area>1140,452,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>Input:</value>
         </textarea>
 
         <spinbox name="input" from="basewidespinbox">
-            <position>1396,544</position>
+            <position>1396,444</position>
         </spinbox>
 
         <textarea name="startoffset_label" from="basetextarea">
-            <area>1140,612,250,30</area>
+            <area>1140,512,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>Start Offset:</value>
         </textarea>
 
         <spinbox name="startoffset" from="basewidespinbox">
-            <position>1396,604</position>
+            <position>1396,504</position>
             <template type="negative">%n minute(s) late</template>
             <template type="zero">Start on time</template>
             <template type="positive">%n minute(s) early</template>
         </spinbox>
 
         <textarea name="endoffset_label" from="basetextarea">
-            <area>1140,672,250,30</area>
+            <area>1140,572,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>End Offset:</value>
         </textarea>
 
         <spinbox name="endoffset" from="basewidespinbox">
-            <position>1396,664</position>
+            <position>1396,564</position>
             <template type="negative">%n minute(s) early</template>
             <template type="zero">End on time</template>
             <template type="positive">%n minute(s) late</template>
         </spinbox>
 
         <textarea name="dupmethod_label" from="basetextarea">
-            <area>1140,732,250,30</area>
+            <area>1140,632,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>Dup Method:</value>
         </textarea>
 
         <spinbox name="dupmethod" from="basewidespinbox">
-            <position>1396,724</position>
+            <position>1396,624</position>
         </spinbox>
 
         <textarea name="dupscope_label" from="basetextarea">
-            <area>1140,792,250,30</area>
+            <area>1140,692,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>Dup Scope:</value>
         </textarea>
 
         <spinbox name="dupscope" from="basewidespinbox">
-            <position>1396,784</position>
+            <position>1396,684</position>
         </spinbox>
 
         <checkbox name="ruleactive" from="basecheckbox">
-            <position>1450,894</position>
+            <position>1426,794</position>
         </checkbox>
 
         <textarea name="ruleactive_label" from="basetextarea">
-            <area>1500,894,450,30</area>
+            <area>1473,798,450,30</area>
             <align>left,vcenter</align>
             <font>basesmall</font>
             <value>Recording Rule is Active</value>
@@ -2152,11 +2020,11 @@
 
     </window>
 
-    <window name="storageoptionseditor">
+    <window name="schedulefiltereditor">
         <area>-1,-1,1920,1079</area>
 
         <imagetype name="fanart">
-            <filename />
+            <filename/>
         </imagetype>
 
         <imagetype name="rightpanel_bg">
@@ -2166,7 +2034,110 @@
 
         <shape name="rightpanel_dark">
             <area>1238,0,682,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
+        </shape>
+
+        <textarea name="tit" from="basetextarea">
+            <area>1260,174,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+            <value>Filter Options</value>
+        </textarea>
+
+        <textarea name="subt" from="basetextarea">
+            <area>1260,225,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Select the filter options for this recording.</value>
+        </textarea>
+
+        <buttonlist name="filters" from="baseshapebuttonlist">
+            <area>1275,332,575,600</area>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <buttonarea>0,0,100%,97%</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,575,50</area>
+                <state name="active">
+                    <area>0,0,100%,50</area>
+                    <textarea name="buttontext">
+                        <area>40,10,-40,30</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>35,10</position>
+                        <state type="off">
+                            <imagetype name="checkoff">
+                                <filename>images/checkbox_unselected_unchecked.png</filename>
+                            </imagetype>
+                        </state>
+                        <state type="half">
+                            <imagetype name="checkhalf">
+                                <filename>images/checkbox_selected_unchecked.png</filename>
+                            </imagetype>
+                        </state>
+                        <state type="full">
+                            <imagetype name="checkfull">
+                                <filename>images/checkbox_unselected_checked.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <imagetype name="divider">
+                        <area>50,48,470,2</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selectedactive" from="active">
+                    <shape name="item">
+                        <fill color="#0767AB" alpha="240"/>
+                    </shape>
+                    <textarea name="buttontext">
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <shape name="item">
+                        <fill color="#222222" alpha="180"/>
+                    </shape>
+                    <textarea name="buttontext">
+                        <alpha>200</alpha>
+                        <font>basesmall</font>
+                    </textarea>
+                </state>
+            </statetype>
+
+            <statetype name="upscrollarrow">
+                <position>538,-24</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>555,-24</position>
+            </statetype>
+        </buttonlist>
+        <button name="back" from="basebutton">
+            <position>1500,994</position>
+            <value>Done</value>
+        </button>
+
+    </window>
+
+    <window name="storageoptionseditor">
+        <area>-1,-1,1920,1079</area>
+
+        <imagetype name="fanart">
+            <filename/>
+        </imagetype>
+
+        <imagetype name="rightpanel_bg">
+            <position>1100,0</position>
+            <filename>images/editmetadata_leftpanelwide_bg.png</filename>
+        </imagetype>
+
+        <shape name="rightpanel_dark">
+            <area>1238,0,682,1080</area>
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <textarea name="tit" from="basetextarea">
@@ -2273,7 +2244,7 @@
         <area>-1,-1,1920,1079</area>
 
         <imagetype name="fanart">
-            <filename />
+            <filename/>
         </imagetype>
 
         <imagetype name="rightpanel_bg">
@@ -2283,7 +2254,7 @@
 
         <shape name="rightpanel_dark">
             <area>1238,0,682,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <textarea name="tit" from="basetextarea">
@@ -2405,13 +2376,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -2424,7 +2395,7 @@
         <shape name="infobox">
             <area>35,18,694,963</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -2490,7 +2461,7 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <fill color="#0767AB" alpha="240"/>
                     </shape>
                     <textarea name="rectype">
                         <font>basesmall</font>
@@ -2511,7 +2482,7 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="item">
-                        <fill color="#222222" alpha="180" />
+                        <fill color="#222222" alpha="180"/>
                     </shape>
                     <textarea name="buttontext">
                         <alpha>200</alpha>
@@ -2611,7 +2582,7 @@
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>allcenter</align>
-            <value>To create a custom recording rule, either select an existing rule, or create a new rule by typing in a name.  Then select a rule type and hit enter.  The SQL code will be transferred below, and you can edit it and insert your own program information.\n\nFinally, you can test, immediately activate, store, or cancel your rule.</value>
+            <value>To create a custom recording rule, either select an existing rule, or create a new rule by typing in a name. Then select a rule type and hit enter. The SQL code will be transferred below, and you can edit it and insert your own program information.\n\nFinally, you can test, immediately activate, store, or cancel your rule.</value>
         </textarea>
 
         <textarea name="title_text" from="basetextarea">
@@ -2710,13 +2681,13 @@
 
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <clock name="clock">
@@ -2729,7 +2700,7 @@
         <shape name="infobox">
             <area>35,18,694,600</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <fill color="#000000" alpha="180"/>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -2794,7 +2765,7 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <fill color="#0767AB" alpha="240"/>
                     </shape>
                     <textarea name="channel">
                         <font>basesmall</font>
@@ -2819,7 +2790,7 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="item">
-                        <fill color="#222222" alpha="180" />
+                        <fill color="#222222" alpha="180"/>
                     </shape>
                     <textarea name="buttontext">
                         <alpha>200</alpha>
@@ -2841,12 +2812,12 @@
 
         <imagetype name="fanart">
             <area>0,0,1920,1080</area>
-            <filename />
+            <filename/>
         </imagetype>
 
         <imagetype name="coverart">
             <area>50,50,300,500</area>
-            <filename />
+            <filename/>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -2857,7 +2828,7 @@
 
         <shape name="rightpanel_dark">
             <area>1238,0,682,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="80"/>
         </shape>
 
         <textarea name="tit" from="basetextarea">
@@ -2945,4 +2916,3 @@
     </window>
 
 </mythuitheme>
-
