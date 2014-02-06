@@ -229,6 +229,7 @@
         <buttonlist name="videos">
             <area>786,90,1136,980</area>
             <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
             <spacing>2</spacing>

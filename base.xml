@@ -241,6 +241,7 @@
     <buttonlist name="basevideolist">
         <area>786,549,1136,535</area>
         <scrollstyle>free</scrollstyle>
+        <arrange>stack</arrange>
         <wrapstyle>items</wrapstyle>
         <layout>vertical</layout>
         <spacing>0</spacing>
