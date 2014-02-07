@@ -404,6 +404,9 @@
                     <align>left,vcenter</align>
                     <font>basesmall</font>
                     <alpha>210</alpha>
+                    <!-- Uncomment when you like the season/episode information next to the subtitle
+                    <template>%00x00| - %%SUBTITLE%</template>
+                    -->
                 </textarea>
                 <textarea name="name">
                     <area>10,10,1000,40</area>
