@@ -280,6 +280,7 @@
             <area>500,770,1100,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
+            <template>%TITLE%% (|YEAR|)%</template>
         </textarea>
 
         <textarea name="subtitle">
