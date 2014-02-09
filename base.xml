@@ -1660,8 +1660,9 @@
             </state>
         </statetype>
         <imagetype name="cursor">
-            <position>0,0</position>
-            <filename>images/textedit_cursor.png</filename>
+            <!-- WxH is needed with left aligned textedit, otherwise only 1px width is shown -->
+            <area>0,0, 13,26</area>
+            <filename>images/cursor.png</filename>
         </imagetype>
         <textarea name="text">
             <area>5,8,490,30</area>
@@ -1694,8 +1695,7 @@
             </state>
         </statetype>
         <imagetype name="cursor">
-            <position>0,0</position>
-            <filename>images/textedit_cursor.png</filename>
+            <filename>images/cursor.png</filename>
         </imagetype>
         <textarea name="text">
             <area>5,8,365,30</area>
@@ -1725,8 +1725,7 @@
             </state>
         </statetype>
         <imagetype name="cursor">
-            <position>0,0</position>
-            <filename>images/textedit_cursor.png</filename>
+            <filename>images/cursor.png</filename>
         </imagetype>
         <textarea name="text">
             <area>5,8,490,30</area>
@@ -1759,8 +1758,7 @@
             </state>
         </statetype>
         <imagetype name="cursor">
-            <position>0,-5</position>
-            <filename>images/textedit_cursor.png</filename>
+            <filename>images/cursor.png</filename>
         </imagetype>
         <textarea name="text">
             <area>5,8,490,147</area>

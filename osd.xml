@@ -816,8 +816,7 @@
                 </state>
             </statetype>
             <imagetype name="cursor">
-                <area>0,0,8,44</area>
-                <filename>images/textedit_cursor.png</filename>
+                <filename>images/cursor.png</filename>
             </imagetype>
             <textarea name="text">
                 <area>5,8,490,30</area>
