@@ -118,6 +118,7 @@
         </buttonlist>
 
         <buttonlist name="rightlist" from="baseshapebuttonlistwide">
+            <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext">
