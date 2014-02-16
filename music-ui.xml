@@ -1453,10 +1453,10 @@
     </window>
 
     <window name="miniplayer">
-        <area>-1,5,590,190</area>
+        <area>-1,5,890,190</area>
         <imagetype name="track_info_background">
             <filename>miniplayer_background.png</filename>
-            <area>10,10,569,170</area>
+            <area>10,10,869,170</area>
         </imagetype>
 
         <imagetype name="mm_blackhole_border">
@@ -1465,29 +1465,29 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>170,15,400,35</area>
-            <font>baselarge</font>
+            <area>180,15,700,35</area>
+            <font>basemedium</font>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>170,55,400,35</area>
-            <font>basemedium</font>
+            <area>180,55,700,35</area>
+            <font>basesmall</font>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>170,90,400,35</area>
-            <font>basemedium</font>
+            <area>180,90,700,35</area>
+            <font>basesmall</font>
         </textarea>
 
         <statetype name="ratings_state">
         </statetype>
 
         <textarea name="info" from="basetextarea">
-            <area>170,125,250,25</area>
+            <area>180,125,250,25</area>
         </textarea>
 
         <textarea name="time" from="basetextarea">
-            <area>385,125,185,25</area>
+            <area>365,125,215,25</area>
             <align>right</align>
         </textarea>
 
@@ -1497,7 +1497,7 @@
         </imagetype>
 
         <progressbar name="progress">
-            <area>170,150,10,10</area>
+            <area>180,150,10,10</area>
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
