@@ -851,6 +851,7 @@
         <searchposition>-1,430</searchposition>
         <area>0,0,671,538</area>
         <layout>vertical</layout>
+        <arrange>stack</arrange>
         <spacing>0</spacing>
         <buttonarea>0,0,100%,97%</buttonarea>
         <statetype name="buttonitem">
