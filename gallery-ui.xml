@@ -23,7 +23,7 @@
         </clock>
 
         <group name="gridwall">
-            <area>25,45,100%-50,100%-10</area>
+            <area>37,45,1846,100%-10</area>
 
             <shape name="gridwallbg">
                 <area>0,0,100%,100%</area>
