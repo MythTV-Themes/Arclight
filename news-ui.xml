@@ -98,6 +98,7 @@
             <position>0,669</position>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
         </buttonlist>
@@ -105,6 +106,7 @@
         <buttonlist name="articleslist" from="baserecordinglistwide">
             <area>786,549,1136,525</area>
             <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
             <spacing>0</spacing>
@@ -265,6 +267,7 @@
             <position>0,669</position>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
         </buttonlist>
@@ -272,6 +275,7 @@
         <buttonlist name="sites" from="baserecordinglistwide">
             <area>786,557,1136,525</area>
             <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
             <spacing>0</spacing>
