@@ -641,11 +641,13 @@
             <position>0,669</position>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
         </buttonlist>
 
         <buttonlist name="schedules" from="baseshapebuttonlistwide">
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1463,6 +1465,7 @@
         <buttonlist name="times" from="baserecordinglistwide">
             <area>786,557,1136,525</area>
             <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
             <spacing>0</spacing>
@@ -2244,6 +2247,8 @@
         </textarea>
 
         <buttonlist name="programs" from="baseshapebuttonlistwide">
+            <arrange>stack</arrange>
+            <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="rectype" from="basetextarea">
