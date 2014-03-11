@@ -647,8 +647,6 @@
         </buttonlist>
 
         <buttonlist name="schedules" from="baseshapebuttonlistwide">
-            <arrange>stack</arrange>
-            <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="shortstarttimedate">
@@ -2247,8 +2245,6 @@
         </textarea>
 
         <buttonlist name="programs" from="baseshapebuttonlistwide">
-            <arrange>stack</arrange>
-            <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="rectype" from="basetextarea">

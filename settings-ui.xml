@@ -49,7 +49,6 @@
         </textarea>
 
         <buttonlist name="settings" from="baseshapebuttonlistwide">
-            <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext" from="basetextarea">

@@ -1151,9 +1151,11 @@
     </buttonlist>
 
     <buttonlist name="baseshapebuttonlistwide">
-        <area>786,96,1136,1000</area>
+        <area>786,85,1136,1000</area>
         <layout>vertical</layout>
         <spacing>1</spacing>
+        <arrange>stack</arrange>
+        <wrapstyle>items</wrapstyle>
         <drawfrombottom>true</drawfrombottom>
         <buttonarea>2,0,1136,1000</buttonarea>
         <statetype name="buttonitem">
@@ -1208,7 +1210,7 @@
             </state>
         </statetype>
         <statetype name="upscrollarrow">
-            <position>1075,-30</position>
+            <position>1075,-5</position>
             <state type="off"> </state>
             <state type="full">
                 <imagetype name="upon">
@@ -1218,7 +1220,7 @@
             </state>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>1057,-30</position>
+            <position>1057,-5</position>
             <state type="off"> </state>
             <state type="full">
                 <imagetype name="dnon">
