@@ -4,14 +4,14 @@
 
     <!-- current playlist button list -->
     <buttonlist name="basecurrentplaylist">
-        <area>786,478,1136,600</area>
+        <area>786,378,1136,690</area>
         <scrollstyle>free</scrollstyle>
         <arrange>stack</arrange>
         <wrapstyle>items</wrapstyle>
         <layout>vertical</layout>
         <spacing>1</spacing>
         <drawfrombottom>true</drawfrombottom>
-        <buttonarea>2,0,1136,600</buttonarea>
+        <buttonarea>2,0,1136,700</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,0,100%,66</area>
@@ -142,7 +142,7 @@
                     <align>left,top</align>
                     <template>Year: %1</template>
                 </textarea>               
-		<statetype name="ratingstate" from="baseratingstate">
+                <statetype name="ratingstate" from="baseratingstate">
                     <position>120,105</position>
                 </statetype>
                 <textarea name="lastplayed" from="buttontext">
@@ -174,7 +174,7 @@
             </state>
         </statetype>
         <statetype name="upscrollarrow">
-            <position>1075,-30</position>
+            <position>1075,-5</position>
             <state type="off">
             </state>
             <state type="full">
@@ -185,7 +185,7 @@
             </state>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>1057,-30</position>
+            <position>1057,-5</position>
             <state type="off">
             </state>
             <state type="full">
