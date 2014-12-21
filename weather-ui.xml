@@ -1165,21 +1165,21 @@
             <filename>images/arclight_search_bg.png</filename>
         </imagetype>
 
-        <textedit name="loc-edit" from="basehalftextedit">
-            <position>73,105</position>
-        </textedit>
-
-        <button name="searchbtn" from="basebutton">
-            <position>190,530</position>
-            <value>Search</value>
-        </button>
-
         <buttonlist name="results" from="basepopupbuttonlist">
-            <area>36,169,444,328</area>
+            <area>36,100,444,328</area>
             <drawfrombottom>yes</drawfrombottom>
             <align>center</align>
             <showarrow>no</showarrow>
         </buttonlist>
+
+        <textedit name="loc-edit" from="basehalftextedit">
+            <position>73,486</position>
+        </textedit>
+
+        <button name="searchbtn" from="basebutton">
+            <position>190,540</position>
+            <value>Search</value>
+        </button>
 
         <textarea name="title" from="basetextarea">
             <area>109,50,300,60</area>

@@ -2189,12 +2189,8 @@
             <filename>images/arclight_search_bg.png</filename>
         </imagetype>
 
-        <textedit name="input" from="basehalftextedit">
-            <position>73,110</position>
-        </textedit>
-
         <buttonlist name="itemlist" from="basepopupbuttonlist">
-            <area>36,169,444,328</area>
+            <area>36,100,444,328</area>
             <drawfrombottom>yes</drawfrombottom>
             <align>center</align>
             <showarrow>no</showarrow>
@@ -2206,18 +2202,22 @@
             <align>allcenter</align>
         </textarea>
 
+        <textedit name="input" from="basehalftextedit">
+            <position>73,486</position>
+        </textedit>
+
         <imagetype name="dialogboxoverlay">
             <position>0,0</position>
             <filename>images/arclight_search_overlay.png</filename>
         </imagetype>
 
         <button name="cancel" from="basebutton">
-            <position>73,530</position>
+            <position>73,540</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="basebutton">
-            <position>293,530</position>
+            <position>293,540</position>
             <value>OK</value>
         </button>
 

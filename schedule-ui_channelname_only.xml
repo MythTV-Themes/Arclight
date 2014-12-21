@@ -1010,12 +1010,8 @@
             <filename>images/arclight_search_bg.png</filename>
         </imagetype>
 
-        <textedit name="phrase_edit" from="basehalftextedit">
-            <position>73,105</position>
-        </textedit>
-
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-            <area>36,169,444,328</area>
+            <area>36,100,444,328</area>
             <drawfrombottom>yes</drawfrombottom>
             <align>center</align>
             <showarrow>no</showarrow>
@@ -1032,18 +1028,22 @@
             <filename>images/arclight_search_overlay.png</filename>
         </imagetype>
 
+        <textedit name="phrase_edit" from="basehalftextedit">
+            <position>73,486</position>
+        </textedit>
+
         <button name="ok_button" from="basebuttonslim">
-            <position>45,530</position>
+            <position>45,540</position>
             <value>OK</value>
         </button>
 
         <button name="delete_button" from="basebuttonslim">
-            <position>200,530</position>
+            <position>200,540</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="basebuttonslim">
-            <position>357,530</position>
+            <position>357,540</position>
             <value>Record</value>
         </button>
 
@@ -1086,7 +1086,7 @@
         </imagetype>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-            <area>36,169,444,328</area>
+            <area>36,100,444,328</area>
             <drawfrombottom>yes</drawfrombottom>
             <align>center</align>
             <showarrow>no</showarrow>
@@ -1104,17 +1104,17 @@
         </imagetype>
 
         <button name="edit_button" from="basebuttonslim">
-            <position>45,530</position>
+            <position>45,540</position>
             <value>OK</value>
         </button>
 
         <button name="delete_button" from="basebuttonslim">
-            <position>200,530</position>
+            <position>200,540</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="basebuttonslim">
-            <position>357,530</position>
+            <position>357,540</position>
             <value>Record</value>
         </button>
 

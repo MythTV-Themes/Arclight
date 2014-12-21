@@ -10,14 +10,22 @@
             <filename>Backgrounds/</filename>
         </imagetype>
 
+        <!-- 27.03, guide with channelicon
         <imagetype name="leftpanel_bg">
             <position>-20,0</position>
             <filename>images/editmetadata_leftpanel_bg.png</filename>
         </imagetype>
+        -->
 
+        <!-- 27.03, guide with channelicon
         <shape name="panel_dark">
             <area>0,0,768,1080</area>
             <fill color="#000000" alpha="80"/>
+        </shape>
+        -->
+        <shape name="panel_dark">
+            <area>0,90,935,990</area>
+            <fill color="#000000" alpha="200"/>
         </shape>
 
         <shape name="item">
@@ -33,12 +41,13 @@
             <template>%DATE%, %TIME%</template>
         </clock>
 
+        <!-- 27.03, guide with channelicon, this shape concurs with panel_dark
         <shape name="infobox">
             <area>35,13,524,721</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180"/>
         </shape>
-
+        -->
         <imagetype name="channelicon">
             <area>45,33,504,150</area>
             <preserveaspect>true</preserveaspect>
@@ -165,11 +174,19 @@
             <statetype name="buttonitem">
                 <area>0,0,343,88</area>
                 <state name="active">
+                    <!-- 27.03, guide with channelicon
                     <shape name="textback">
                         <area>0,1,180,88</area>
                         <type>roundbox</type>
                         <fill color="#FFFFFF" alpha="60"/>
                     </shape>
+                    -->
+                    <shape name="textback">
+                        <area>0,0,343,88</area>
+                        <type>roundbox</type>
+                        <fill color="#FFFFFF" alpha="60"/>
+                    </shape>
+                    <!-- 27.03, guide with channelicon
                     <shape name="channelback">
                         <area>205,0,150,88</area>
                         <type>box</type>
@@ -181,16 +198,26 @@
                         <preserveaspect>true</preserveaspect>
                         <alpha>200</alpha>
                     </imagetype>
+                    -->
                     <!-- 25.11
                    <textarea name="buttontext" from="basetextarea">
                         <area>0,2,180,88</area>
                         <align>allcenter</align>
                         <font>basesmall</font>
                     </textarea>
--->
+                    -->
+                    <!-- 27.03, guide with channelicon
                     <textarea name="callsign" from="basetextarea">
                         <area>0,2,180,88</area>
                         <align>allcenter</align>
+                        <font>basesmall</font>
+                        <template>%CHANNELNUMBER% %CALLSIGN%</template>
+                    </textarea>
+                    -->
+                    <textarea name="callsign" from="basetextarea">
+                        <area>10,2,323,88</area>
+                        <align>left,vcenter</align>
+                        <cutdown>false</cutdown>
                         <font>basesmall</font>
                         <template>%CHANNELNUMBER% %CALLSIGN%</template>
                     </textarea>
@@ -983,12 +1010,8 @@
             <filename>images/arclight_search_bg.png</filename>
         </imagetype>
 
-        <textedit name="phrase_edit" from="basehalftextedit">
-            <position>73,105</position>
-        </textedit>
-
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-            <area>36,169,444,328</area>
+            <area>36,100,444,328</area>
             <drawfrombottom>yes</drawfrombottom>
             <align>center</align>
             <showarrow>no</showarrow>
@@ -1005,18 +1028,22 @@
             <filename>images/arclight_search_overlay.png</filename>
         </imagetype>
 
+        <textedit name="phrase_edit" from="basehalftextedit">
+            <position>73,486</position>
+        </textedit>
+
         <button name="ok_button" from="basebuttonslim">
-            <position>45,530</position>
+            <position>45,540</position>
             <value>OK</value>
         </button>
 
         <button name="delete_button" from="basebuttonslim">
-            <position>200,530</position>
+            <position>200,540</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="basebuttonslim">
-            <position>357,530</position>
+            <position>357,540</position>
             <value>Record</value>
         </button>
 
@@ -1059,7 +1086,7 @@
         </imagetype>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-            <area>36,169,444,328</area>
+            <area>36,100,444,328</area>
             <drawfrombottom>yes</drawfrombottom>
             <align>center</align>
             <showarrow>no</showarrow>
@@ -1077,17 +1104,17 @@
         </imagetype>
 
         <button name="edit_button" from="basebuttonslim">
-            <position>45,530</position>
+            <position>45,540</position>
             <value>OK</value>
         </button>
 
         <button name="delete_button" from="basebuttonslim">
-            <position>200,530</position>
+            <position>200,540</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="basebuttonslim">
-            <position>357,530</position>
+            <position>357,540</position>
             <value>Record</value>
         </button>
 
