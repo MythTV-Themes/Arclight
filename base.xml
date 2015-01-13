@@ -2510,8 +2510,12 @@
                         <font>basesmall</font>
                         <alpha>210</alpha>
                     </textarea>
+                    <!-- upto 27.04
                     <textarea name="releasedate" from="timedate">
                         <template>Released %1</template>
+                    </textarea>
+                    -->
+                    <textarea name="year" from="timedate">
                     </textarea>
                 </state>
                 <state name="selectedactive">
@@ -2534,8 +2538,12 @@
                         <font>basesmall</font>
                         <alpha>210</alpha>
                     </textarea>
+                    <!-- upto 27.04
                     <textarea name="releasedate" from="timedate">
                         <template>Released %1</template>
+                    </textarea>
+                    -->
+                    <textarea name="year" from="timedate">
                     </textarea>
                     <textarea name="userrating" from="basetextarea">
                         <area>700,56,423,30</area>
