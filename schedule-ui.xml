@@ -5,6 +5,7 @@
     <window name="programguide">
         <area>0,0,1920,1080</area>
 
+
         <imagetype name="fanart">
             <area>0,0,1920,1080</area>
             <filename>Backgrounds/</filename>
@@ -23,15 +24,28 @@
             <fill color="#000000" alpha="80"/>
         </shape>
         -->
+	<!--
         <shape name="panel_dark">
             <area>0,90,935,990</area>
-            <fill color="#000000" alpha="200"/>
+            <fill color="#000000" alpha="100"/>
         </shape>
-
+	-->
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="200"/>
+        </shape>
+
+        <shape name="bgDescription">
+            <area>970,892,940,178</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100"/>
+        </shape>
+
+        <shape name="bgTitle">
+            <area>254,892,704,178</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100"/>
         </shape>
 
         <clock name="clock">
@@ -47,28 +61,28 @@
             <type>roundbox</type>
             <fill color="#000000" alpha="180"/>
         </shape>
-        -->
+   -->
         <imagetype name="channelicon">
-            <area>45,33,504,150</area>
+            <area>10,902,234,150</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>45,183,504,60</area>
+            <area>254,867,698,120</area>
             <font>basegothicmedium</font>
-            <align>left,vcenter</align>
+            <align>center,center</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>45,234,504,57</area>
+            <area>254,970,698,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
-            <align>left,vcenter</align>
+            <align>center,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
-            <area>45,275,504,57</area>
+        <textarea name="channel" from="basetextarea" depends="!channelicon">
+            <area>10,1013,504,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
@@ -76,27 +90,27 @@
         </textarea>
 
         <textarea name="longdatetext" from="basetextarea">
-            <area>45,310,504,57</area>
+            <area>835,0,250,60</area>
             <multiline>yes</multiline>
-            <font>basesmalllightblue</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
+            <font>baselarge</font>
+            <align>center,center</align>
+            <cutdown>no</cutdown>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,360,504,345</area>
+            <area>980,900,920,502</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
             <cutdown>yes</cutdown>
-            <template>(%STARTTIME% - %ENDTIME%) %LONGREPEAT% %YEARSTARS%%DESCRIPTION%</template>
+            <template>(%STARTTIME% - %ENDTIME%) %LONGREPEAT% %YEARSTARS%%CHANNEL%\n%DESCRIPTION%</template>
         </textarea>
 
         <guidegrid name="guidegrid">
-            <area>936,90,1001,990</area>
+            <area>254,92,1656,790</area>
             <layout>horizontal</layout>
             <channels>11</channels>
-            <timeslots>4</timeslots>
+            <timeslots>6</timeslots>
             <solidcolor>#000000</solidcolor>
             <categoryalpha>180</categoryalpha>
             <selector type="box" linecolor="#0767AB" fillcolor="#0767AB"/>
@@ -119,22 +133,22 @@
         </guidegrid>
 
         <textarea name="datetext" from="basetextarea">
-            <area>790,50,120,50</area>
+            <area>100,50,120,50</area>
             <align>left,vcenter</align>
         </textarea>
 
         <buttonlist name="timelist">
-            <area>813,50,1001,990</area>
+            <area>10,50,1656,790</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1001,36</buttonarea>
+            <buttonarea>0,0,1656,36</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,250,36</area>
+                <area>0,0,276,36</area>
                 <state name="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,250,36</area>
+                        <area>0,0,276,36</area>
                         <font>basesmall</font>
-                        <align>hcenter,bottom</align>
+                        <align>right,bottom</align>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active"/>
@@ -167,12 +181,12 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>581,92,555,980</area>
+            <area>10,92,234,790</area>
             <layout>vertical</layout>
             <spacing>2</spacing>
-            <buttonarea>0,0,555,990</buttonarea>
+            <buttonarea>0,0,200,790</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,343,88</area>
+                <area>0,0,234,68</area>
                 <state name="active">
                     <!-- 27.03, guide with channelicon
                     <shape name="textback">
@@ -182,9 +196,9 @@
                     </shape>
                     -->
                     <shape name="textback">
-                        <area>0,0,343,88</area>
+                        <area>0,0,234,68</area>
                         <type>roundbox</type>
-                        <fill color="#FFFFFF" alpha="60"/>
+                        <fill color="#FFFFFF" alpha="80"/>
                     </shape>
                     <!-- 27.03, guide with channelicon
                     <shape name="channelback">
@@ -215,7 +229,7 @@
                     </textarea>
                     -->
                     <textarea name="callsign" from="basetextarea">
-                        <area>10,2,323,88</area>
+                        <area>10,2,323,70</area>
                         <align>left,vcenter</align>
                         <cutdown>false</cutdown>
                         <font>basesmall</font>
@@ -224,7 +238,13 @@
 
                 </state>
                 <state name="selectedactive" from="active"/>
-                <state name="selectedinactive" from="active"/>
+                <state name="selectedinactive" from="active">
+                    <shape name="textback">
+                        <area>0,0,234,68</area>
+                        <type>roundbox</type>
+                        <fill color="#555555" alpha="80"/>
+                    </shape>
+                </state>
             </statetype>
             <statetype name="downscrollarrow">
                 <state type="off">
