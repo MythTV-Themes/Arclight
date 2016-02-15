@@ -301,7 +301,7 @@
             <area>45,30,600,50</area>
             <font>basegothicmedium</font>
             <align>center,vcenter</align>
-            <value>Wagi dla PlayList</value>
+            <value>Rating Settings</value>
         </textarea>
 
         <shape name="settings_bg">
