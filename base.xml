@@ -1572,6 +1572,42 @@
         </statetype>
     </buttonlist>
 
+    <!-- Base definition of a list in medium 'selector' configuration -->
+    <buttonlist name="basemediumselector" from="baseselector">
+        <area>0,0,300,38</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,300,38</area>
+                <imagetype name="buttonbackground">
+                    <area>0,0,300,38</area>
+                    <filename>images/wideselector_unselected.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,8,290,30</area>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active">
+                <imagetype name="buttonbackground">
+                    <area>0,0,300,38</area>
+                    <filename>images/wideselector_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="selectedinactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>60</alpha>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>303,0</position>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>303,18</position>
+        </statetype>
+    </buttonlist>
+
     <!-- Base definition of a list in wide 'selector' configuration -->
     <buttonlist name="basewideselector">
         <area>0,0,521,38</area>
