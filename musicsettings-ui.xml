@@ -182,39 +182,66 @@
         </shape>
 
         <textarea name="resumemode_label" from="basetextarea">
-            <area>50,300,300,30</area>
+            <area>30,150,350,40</area>
             <align>right,vcenter</align>
             <value>Resume mode:</value>
         </textarea>
-        <buttonlist name="resumemode" from="baseselector">
-            <position>370,300</position>
+        <buttonlist name="resumemode" from="basemediumselector">
+            <position>400,150</position>
+        </buttonlist>
+
+        <textarea name="resumemodeeditor_label" from="basetextarea">
+            <area>30,200,350,40</area>
+            <align>right,vcenter</align>
+            <value>Resume mode (Playlist Editor):</value>
+        </textarea>
+        <buttonlist name="resumemodeeditor" from="basemediumselector">
+            <position>400,200</position>
+        </buttonlist>
+
+        <textarea name="resumemoderadio_label" from="basetextarea">
+            <area>30,250,350,40</area>
+            <align>right,vcenter</align>
+            <value>Resume mode (Radio):</value>
+        </textarea>
+        <buttonlist name="resumemoderadio" from="basemediumselector">
+            <position>400,250</position>
         </buttonlist>
 
         <textarea name="exitaction_label" from="basetextarea">
-            <area>50,400,300,30</area>
+            <area>30,320,350,40</area>
             <align>right,vcenter</align>
             <value>Action on exit:</value>
         </textarea>
-        <buttonlist name="exitaction" from="baseselector">
-            <position>370,400</position>
+        <buttonlist name="exitaction" from="basemediumselector">
+            <position>400,320</position>
+        </buttonlist>
+
+        <textarea name="jumpaction_label" from="basetextarea">
+            <area>30,390,350,40</area>
+            <align>right,vcenter</align>
+            <value>Action on jumppoint:</value>
+        </textarea>
+        <buttonlist name="jumpaction" from="basemediumselector">
+            <position>400,390</position>
         </buttonlist>
 
         <textarea name="autolookupcd_label" from="basetextarea">
-            <area>50,500,510,30</area>
+            <area>30,590,350,40</area>
             <align>right,vcenter</align>
             <value>Automatically lookup CDs:</value>
         </textarea>
         <checkbox name="autolookupcd" from="basecheckbox">
-            <position>570,500</position>
+            <position>400,590</position>
         </checkbox>
 
         <textarea name="autoplaycd_label" from="basetextarea">
-            <area>50,600,510,30</area>
+            <area>30,630,350,40</area>
             <align>right,vcenter</align>
             <value>Automatically Play CDs:</value>
         </textarea>
         <checkbox name="autoplaycd" from="basecheckbox">
-            <position>570,600</position>
+            <position>400,630</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">
