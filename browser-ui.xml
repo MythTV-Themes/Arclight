@@ -223,15 +223,15 @@
             <value>URL:</value>
         </textarea>
 
-        <textarea name="genre_text" from="title_text">
+        <textarea name="homepagelabel" from="categorylabel">
             <position>15,730</position>
-            <value>Genre:</value>
+            <value>Homepage:</value>
         </textarea>
 
-        <textarea name="channel_text" from="title_text">
-            <position>15,790</position>
-            <value>Channel:</value>
-        </textarea>
+        <imagetype name="dialogboxoverlay">
+            <position>0,0</position>
+            <filename>images/arclight_popup_large_overlay.png</filename>
+        </imagetype>
 
         <!--Widgets-->
 
@@ -252,10 +252,9 @@
             <position>195,667</position>
         </textedit>
 
-        <imagetype name="dialogboxoverlay">
-            <position>0,0</position>
-            <filename>images/arclight_popup_large_overlay.png</filename>
-        </imagetype>
+        <checkbox name="homepage" from="basecheckbox">
+            <position>195,734</position>
+        </checkbox>
 
         <button name="cancel" from="basebutton">
             <position>235,850</position>
