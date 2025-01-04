@@ -229,12 +229,24 @@
                         <template>%CHANNELNUMBER% %CALLSIGN%</template>
                     </textarea>
                     -->
+                    <!--  28.03, channel template override 
+                        choose a template, see channelinfo.cpp: ChannelInfo::ToMap
                     <textarea name="callsign" from="basetextarea">
                         <area>10,2,323,70</area>
                         <align>left,vcenter</align>
                         <cutdown>false</cutdown>
                         <font>basesmall</font>
                         <template>%CHANNELNUMBER% %CALLSIGN%</template>
+                        <template>%CHANNELNUMBER% %CHANNELNAME%</template>
+                    </textarea>
+                    -->
+
+                    <!-- use the format of the 'ChannelFormat' setting -->
+                    <textarea name="buttontext" from="basetextarea">
+                         <area>10,2,323,70</area>
+                        <align>left,vcenter</align>
+                        <cutdown>false</cutdown>
+                        <font>basesmall</font>
                     </textarea>
 
                 </state>
